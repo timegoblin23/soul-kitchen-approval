@@ -703,7 +703,7 @@ h1,h2,h3{text-wrap:balance}
       <span class="doc-label">Relaunch approval</span>
     </a>
     <div class="top-actions">
-      <span class="save-indicator" id="save-indicator"><span class="save-dot" id="save-dot"></span><span id="save-text">Saved on this device</span></span>
+      <span class="save-indicator" id="save-indicator"><span class="save-dot" id="save-dot"></span><span id="save-text">Saves on this device</span></span>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
         <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
       </button>
@@ -1785,6 +1785,16 @@ function persist(silent) {
   if (!silent) renderCounts();
 }
 
+function probeStorage() {
+  try {
+    const key = STORAGE_KEY + "-probe";
+    localStorage.setItem(key, "1");
+    localStorage.removeItem(key);
+    storageOK = true;
+  } catch (e) {
+    storageOK = false;
+  }
+}
 function updateSaveIndicator() {
   const dot = document.getElementById("save-dot");
   const text = document.getElementById("save-text");
@@ -1795,7 +1805,7 @@ function updateSaveIndicator() {
     return;
   }
   dot.classList.remove("is-off");
-  if (!state.savedAt) { text.textContent = "Saved on this device"; return; }
+  if (!state.savedAt) { text.textContent = "Saves on this device"; return; }
   const d = new Date(state.savedAt);
   const time = d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
   text.textContent = "Saved " + time;
@@ -2837,6 +2847,8 @@ document.getElementById("export-menu")?.addEventListener("click", function (e) {
    BOOT
    ============================================================ */
 loadState();
+probeStorage();
+updateSaveIndicator();
 initTheme();
 document.getElementById("reviewer-name").value = state.profile.name || "";
 document.getElementById("reviewer-role").value = state.profile.role || "";
