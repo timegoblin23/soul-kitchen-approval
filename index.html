@@ -4,18 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Soul Kitchen Relaunch Approval</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23184121'/%3E%3Cellipse cx='27' cy='23' rx='11' ry='8' fill='%23FFFDE9'/%3E%3Cpath d='M34 28 50 50' stroke='%2376B043' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-<meta name="description" content="Copy and creative approval document for the Soul Kitchen relaunch campaign. Review, comment, rewrite and sign off.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23184121'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23FFFDE9'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <style>
-/* ---------------------------------------------------------------
-   Soul Kitchen relaunch approval
-   Palette: Broth Green, Electric Pea, Golden Lentil, flavour accents
-   Display: Soul Soup Regular. Body: Roboto (brand-book digital fallback).
-   Layout: printed approval deck — sticky review rail + document column.
----------------------------------------------------------------- */
 @font-face{
   font-family:"Soul Soup";
   src:url("assets/SoulSoup-Regular.ttf") format("truetype");
@@ -34,29 +27,20 @@
   --line:#D8DCC6;
   --line-strong:#B9C2A8;
   --green:#184121;
-  --green-2:#24552E;
   --pea:#76B043;
-  --pea-soft:#E8F0D8;
   --lentil:#FFFDE9;
-  --control-bg:#184121;
-  --control-fg:#FFFDE9;
-  --control-muted:#C8D7B7;
+  --amber:#8A5A00;
+  --amber-soft:#FBF0D4;
   --danger:#A92E26;
-  --danger-soft:#F8E5E2;
-  --warn:#8A5A00;
-  --warn-soft:#FBF0D4;
-  --ok:#3E6B2E;
-  --ok-soft:#E8F1DE;
   --focus:#2F6B36;
-  --shadow:0 14px 34px rgba(24,65,33,.09);
-  --shadow-soft:0 4px 14px rgba(24,65,33,.06);
+  --broccoli:#678338;
+  --pumpkin:#E35205;
+  --tomato:#CB333B;
+  --beetroot:#A20067;
+  --mushroom:#C7A984;
   --display:"Soul Soup","Trebuchet MS",sans-serif;
   --body:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --mono:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --radius:5px;
-  --r-sm:3px;
-  --shell:1280px;
-  --measure:68ch;
+  --radius:4px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -70,22 +54,12 @@
     --line:#2B4633;
     --line-strong:#3D5B45;
     --green:#9BD35F;
-    --green-2:#B7E483;
     --pea:#9BD35F;
-    --pea-soft:#213B27;
     --lentil:#FFFDE9;
-    --control-bg:#1A3A24;
-    --control-fg:#FFFDE9;
-    --control-muted:#BAD0A8;
+    --amber:#E8B45C;
+    --amber-soft:#382D15;
     --danger:#F08A80;
-    --danger-soft:#3D211D;
-    --warn:#E8B45C;
-    --warn-soft:#382D15;
-    --ok:#A8D77F;
-    --ok-soft:#213B27;
     --focus:#B7E483;
-    --shadow:0 14px 34px rgba(0,0,0,.28);
-    --shadow-soft:0 4px 14px rgba(0,0,0,.18);
   }
 }
 :root[data-theme="dark"]{
@@ -99,28 +73,18 @@
   --line:#2B4633;
   --line-strong:#3D5B45;
   --green:#9BD35F;
-  --green-2:#B7E483;
   --pea:#9BD35F;
-  --pea-soft:#213B27;
   --lentil:#FFFDE9;
-  --control-bg:#1A3A24;
-  --control-fg:#FFFDE9;
-  --control-muted:#BAD0A8;
+  --amber:#E8B45C;
+  --amber-soft:#382D15;
   --danger:#F08A80;
-  --danger-soft:#3D211D;
-  --warn:#E8B45C;
-  --warn-soft:#382D15;
-  --ok:#A8D77F;
-  --ok-soft:#213B27;
   --focus:#B7E483;
-  --shadow:0 14px 34px rgba(0,0,0,.28);
-  --shadow-soft:0 4px 14px rgba(0,0,0,.18);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
 body{
   margin:0;
@@ -130,8 +94,6 @@ body{
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
-  padding-left:max(18px,env(safe-area-inset-left,0px));
-  padding-right:max(18px,env(safe-area-inset-right,0px));
 }
 body::before{
   content:"";
@@ -139,1743 +101,854 @@ body::before{
   inset:0;
   z-index:-1;
   pointer-events:none;
-  background-image:radial-gradient(circle at 1px 1px,rgba(24,65,33,.05) 1px,transparent 0);
+  background-image:radial-gradient(circle at 1px 1px,rgba(24,65,33,.045) 1px,transparent 0);
   background-size:9px 9px;
   opacity:.55;
 }
-:root[data-theme="dark"] body::before{
-  background-image:radial-gradient(circle at 1px 1px,rgba(255,253,233,.045) 1px,transparent 0);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) body::before{
-    background-image:radial-gradient(circle at 1px 1px,rgba(255,253,233,.045) 1px,transparent 0);
-  }
-}
+:root[data-theme="dark"] body::before{background-image:radial-gradient(circle at 1px 1px,rgba(255,253,233,.04) 1px,transparent 0)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body::before{background-image:radial-gradient(circle at 1px 1px,rgba(255,253,233,.04) 1px,transparent 0)}}
 img{max-width:100%;display:block}
-button,input,select,textarea{font:inherit}
-button{cursor:pointer}
-a{color:var(--green-2);text-underline-offset:3px;text-decoration-thickness:1px}
+a{color:var(--green);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--ink)}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:2px}
 ::selection{background:var(--pea);color:#10240F}
-h1,h2,h3,h4,p{margin:0}
+h1,h2,h3,p{margin:0}
 h1,h2,h3{text-wrap:balance}
 [hidden]{display:none!important}
-.skip-link{position:absolute;left:-9999px;top:0;background:var(--green);color:var(--lentil);padding:10px 14px;z-index:300}
-.skip-link:focus{left:12px;top:12px}
-
-/* ---------- utility ---------- */
-.wrap{max-width:var(--shell);margin-inline:auto}
+.wrap{
+  max-width:1180px;
+  margin-inline:auto;
+  padding-left:max(20px,env(safe-area-inset-left,0px));
+  padding-right:max(20px,env(safe-area-inset-right,0px));
+}
 .eyebrow{
-  font-size:.69rem;
+  font-size:.67rem;
   font-weight:700;
   letter-spacing:.15em;
   text-transform:uppercase;
   color:var(--muted);
 }
-.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
 .muted{color:var(--muted)}
-.small{font-size:.82rem}
-.tiny{font-size:.72rem}
-.nowrap{white-space:nowrap}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.stack{display:flex;flex-direction:column;gap:16px}
-.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.between{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.grow{flex:1 1 auto;min-width:0}
 
-/* ---------- buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  min-height:40px;padding:9px 16px;
-  border:1px solid var(--line-strong);
-  border-radius:var(--r-sm);
-  background:var(--surface);color:var(--ink);
-  font-size:.82rem;font-weight:500;line-height:1.2;
-  text-decoration:none;
-  transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease;
-}
-.btn:hover{background:var(--pea-soft);border-color:var(--pea);color:var(--ink)}
-.btn:active{transform:translateY(1px)}
-.btn-primary{background:var(--green);border-color:var(--green);color:var(--lentil)}
-:root[data-theme="dark"] .btn-primary{background:var(--pea);border-color:var(--pea);color:#10240F}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-primary{background:var(--pea);border-color:var(--pea);color:#10240F}}
-.btn-primary:hover{background:var(--green-2);border-color:var(--green-2);color:var(--lentil)}
-:root[data-theme="dark"] .btn-primary:hover{background:var(--green-2);color:#10240F}
-.btn-ghost{background:transparent;border-color:transparent;padding-inline:10px}
-.btn-ghost:hover{background:var(--pea-soft);border-color:transparent}
-.btn-small{min-height:32px;padding:6px 11px;font-size:.75rem}
-.btn-danger{color:var(--danger);border-color:var(--danger)}
-.btn-danger:hover{background:var(--danger-soft);border-color:var(--danger)}
-.icon-btn{
-  display:inline-grid;place-items:center;width:38px;height:38px;
-  border:1px solid var(--line);border-radius:50%;
-  background:var(--surface);color:var(--ink);
-}
-.icon-btn:hover{background:var(--pea-soft);border-color:var(--pea)}
-.icon-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
-/* ---------- top bar ---------- */
+/* header */
 .topbar{
-  position:sticky;top:0;z-index:60;
-  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--paper) 93%,transparent);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
-.topbar-inner{
-  max-width:var(--shell);margin-inline:auto;
-  min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px;
-}
-.brand{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none;color:var(--ink)}
-.brand-mark{width:26px;height:26px;flex:none;color:var(--green)}
-.brand-name{
-  font-family:var(--display);font-size:1.26rem;line-height:1;
-  letter-spacing:.02em;white-space:nowrap;
+.top-inner{min-height:60px;display:flex;align-items:center;gap:18px}
+.brand{
+  font-family:var(--display);
+  font-size:1.35rem;
+  line-height:1;
+  letter-spacing:.02em;
+  color:var(--ink);
+  text-decoration:none;
+  white-space:nowrap;
 }
 .doc-label{
-  border-left:1px solid var(--line);padding-left:14px;margin-left:2px;
-  font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;
+  margin-left:auto;
+  font-size:.66rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--muted);
+  white-space:nowrap;
 }
-.top-actions{display:flex;align-items:center;gap:8px}
-.save-indicator{display:flex;align-items:center;gap:7px;font-size:.72rem;color:var(--muted);white-space:nowrap}
-.save-dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none}
-.save-dot.is-off{background:var(--warn)}
-.menu{position:relative}
-.menu>summary{
-  list-style:none;display:inline-flex;align-items:center;gap:7px;
-  min-height:38px;padding:8px 13px;border:1px solid var(--line-strong);border-radius:var(--r-sm);
-  background:var(--surface);font-size:.78rem;font-weight:500;cursor:pointer;
+.theme-btn{
+  width:36px;height:36px;flex:none;display:grid;place-items:center;
+  border:1px solid var(--line-strong);border-radius:50%;
+  background:var(--surface);color:var(--ink);
 }
-.menu>summary::-webkit-details-marker{display:none}
-.menu>summary:hover{background:var(--pea-soft);border-color:var(--pea)}
-.menu-panel{
-  position:absolute;right:0;top:calc(100% + 8px);z-index:80;
-  width:236px;padding:8px;background:var(--surface);border:1px solid var(--line);
-  border-radius:var(--radius);box-shadow:var(--shadow);
-}
-.menu-panel button{
-  display:block;width:100%;text-align:left;border:0;background:transparent;color:var(--ink);
-  padding:10px 12px;border-radius:var(--r-sm);font-size:.8rem;
-}
-.menu-panel button:hover{background:var(--pea-soft)}
-.menu-panel .menu-note{padding:8px 12px 6px;font-size:.7rem;color:var(--muted);line-height:1.45}
+.theme-btn:hover{background:var(--paper-2);border-color:var(--green)}
+.theme-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
-/* ---------- hero ---------- */
-.hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--paper) 0%,var(--paper-2) 100%);position:relative;overflow:hidden}
-.hero-inner{max-width:var(--shell);margin-inline:auto;padding-block:58px 46px;position:relative;z-index:1}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,.7fr);gap:48px;align-items:end}
-.hero-copy{max-width:760px}
-.hero .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:18px}
-.hero .eyebrow::before{content:"";width:34px;height:2px;background:var(--pea);display:inline-block}
-.hero h1{
+/* intro */
+.intro{
+  padding-top:64px;
+  padding-bottom:48px;
+  display:block;
+}
+.intro-copy{min-width:0;max-width:860px}
+.intro h1{
   font-family:var(--display);
-  font-size:clamp(3.15rem,8.2vw,6.7rem);
+  font-size:clamp(3rem,7.4vw,5.4rem);
   line-height:.92;
   letter-spacing:.005em;
+  max-width:11ch;
+  margin:14px 0 20px;
+}
+.lede{
+  max-width:56ch;
+  color:var(--ink-2);
+  font-size:1.02rem;
+  line-height:1.65;
+}
+.prepared{
+  margin-top:18px;
+  font-size:.72rem;
+  letter-spacing:.04em;
+  color:var(--muted);
+}
+.checks{
+  border-top:2px solid var(--green);
+  padding-top:16px;
+  margin-top:8px;
+}
+.checks-title{
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--green);
+  margin-bottom:12px;
+}
+.checks ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.checks li{display:flex;gap:9px;font-size:.82rem;line-height:1.5;color:var(--ink-2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none;margin-top:6px}
+
+/* sections */
+.section{border-top:1px solid var(--line);padding-top:34px;padding-bottom:8px}
+.section-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:24px}
+.section-num{
+  font-family:var(--display);
+  font-size:1.5rem;
+  line-height:1;
+  color:var(--green);
+  min-width:34px;
+}
+.section-head h2{
+  font-family:var(--display);
+  font-size:clamp(1.8rem,3.6vw,2.5rem);
+  line-height:1;
+  margin-bottom:5px;
+}
+.section-head p{color:var(--muted);font-size:.85rem;line-height:1.5;max-width:62ch}
+.section-note{
+  margin:-8px 0 22px 48px;
+  font-size:.78rem;
+  line-height:1.5;
+  color:var(--amber);
+}
+
+/* creatives */
+.creative-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:18px;
+}
+.creative{min-width:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.creative .tick{margin-top:auto;padding-top:2px}
+.creative-link{display:block;border:1px solid var(--line);background:var(--paper-2);border-radius:2px;overflow:hidden}
+.creative-link img{width:100%;height:auto;display:block;transition:opacity .15s ease}
+.creative-link:hover img{opacity:.93}
+.creative-kicker{
+  display:block;
+  font-size:.61rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.creative figcaption{display:flex;flex-direction:column;gap:2px}
+.creative figcaption strong{font-size:.88rem;line-height:1.3;font-weight:500}
+.creative figcaption .flavour{font-size:.72rem;line-height:1.35;color:var(--muted)}
+.full-link{font-size:.66rem;margin-top:3px;color:var(--green);text-decoration:none;font-weight:500}
+.full-link:hover{text-decoration:underline}
+.mini-check{
+  display:flex;gap:6px;
+  font-size:.68rem;line-height:1.4;color:var(--amber);
+  margin-top:1px;
+}
+.mini-check .dot{width:6px;height:6px;margin-top:4px}
+
+/* ticks */
+.tick{
+  display:inline-flex;align-items:flex-start;gap:8px;
+  font-size:.76rem;line-height:1.4;color:var(--ink-2);
+  cursor:pointer;user-select:none;
+}
+.tick input{
+  appearance:none;-webkit-appearance:none;
+  width:18px;height:18px;flex:none;margin:0;
+  border:1.5px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);display:inline-grid;place-items:center;cursor:pointer;
+}
+.tick input:checked{background:var(--green);border-color:var(--green)}
+.tick input:checked::after{
+  content:"";width:9px;height:5px;
+  border-left:2px solid var(--lentil);border-bottom:2px solid var(--lentil);
+  transform:rotate(-45deg) translateY(-1px);
+}
+:root[data-theme="dark"] .tick input:checked::after{border-color:#10240F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tick input:checked::after{border-color:#10240F}}
+.tick input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+/* copy */
+.copy-list{display:flex;flex-direction:column}
+.copy-block{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 232px;
+  gap:36px;
+  padding-block:34px;
+  border-top:1px solid var(--line);
+}
+.copy-block:first-child{border-top:0;padding-top:4px}
+.copy-main{min-width:0}
+.copy-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.copy-num{
+  font-family:var(--display);
+  font-size:1.55rem;
+  line-height:1;
+  color:var(--accent,var(--green));
+  min-width:30px;
+}
+.copy-kicker{
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:3px;
+}
+.headline{
+  font-family:var(--display);
+  font-size:clamp(1.5rem,2.6vw,2rem);
+  line-height:1.05;
+  letter-spacing:.005em;
   color:var(--ink);
-  max-width:12ch;
-  margin-bottom:22px;
 }
-.hero-sub{max-width:60ch;color:var(--ink-2);font-size:1.02rem;line-height:1.65}
-.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--line)}
-.hero-stat{background:var(--paper);padding:16px 14px 14px;min-width:0}
-.hero-stat strong{display:block;font-family:var(--display);font-size:1.8rem;line-height:1;color:var(--green);margin-bottom:6px}
-.hero-stat span{display:block;font-size:.69rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);line-height:1.3}
-.flavour-dots{display:flex;align-items:center;gap:7px;margin-top:18px;font-size:.69rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
-.flavour-dots i{width:9px;height:9px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.08)}
-.control-card{
-  background:var(--control-bg);color:var(--control-fg);
-  border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);
-  position:relative;overflow:hidden;
+.copy-meta{
+  display:flex;flex-wrap:wrap;gap:4px 18px;
+  margin:12px 0 16px;
+  font-size:.72rem;
+  line-height:1.45;
+  color:var(--muted);
 }
-.control-card::after{
-  content:"";position:absolute;right:-46px;bottom:-62px;width:190px;height:190px;border-radius:50%;
-  border:26px solid rgba(118,176,67,.13);pointer-events:none;
+.copy-meta b{color:var(--ink-2);font-weight:500}
+.copy-label{
+  font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin:14px 0 6px;
 }
-.control-eyebrow{font-size:.67rem;letter-spacing:.15em;text-transform:uppercase;color:var(--control-muted);margin-bottom:18px}
-.control-status{font-family:var(--display);font-size:2.25rem;line-height:1;margin-bottom:8px;color:var(--lentil)}
-.control-note{font-size:.8rem;color:var(--control-muted);line-height:1.5;max-width:30ch}
-.control-rule{height:1px;background:rgba(255,253,233,.18);margin-block:20px}
-.control-row{display:flex;justify-content:space-between;gap:14px;padding-block:7px;font-size:.78rem}
-.control-row dt{color:var(--control-muted)}
-.control-row dd{margin:0;text-align:right;color:var(--control-fg);font-weight:500}
-.control-progress{height:6px;border-radius:99px;background:rgba(255,253,233,.17);overflow:hidden;margin-top:10px}
-.control-progress span{display:block;height:100%;width:0;background:var(--pea);border-radius:inherit;transition:width .35s ease}
-.control-card .btn{width:100%;margin-top:18px;background:var(--lentil);border-color:var(--lentil);color:var(--green)}
-.control-card .btn:hover{background:var(--pea);border-color:var(--pea);color:#10240F}
+.body{max-width:64ch;font-size:.92rem;line-height:1.62;color:var(--ink-2)}
+.body p{margin:0 0 10px}
+.body p:last-child{margin-bottom:0}
+.benefits{color:var(--green);font-weight:500}
+.benefits br{line-height:1.75}
+.alt{margin-top:16px;border-top:1px dashed var(--line);padding-top:10px}
+.alt summary{cursor:pointer;font-size:.72rem;font-weight:500;color:var(--muted)}
+.alt summary:hover{color:var(--ink)}
+.alt .body{margin-top:12px;font-size:.87rem}
 
-/* ---------- shell / rail ---------- */
-.shell{max-width:var(--shell);margin-inline:auto;display:grid;grid-template-columns:270px minmax(0,1fr);gap:56px;align-items:start;padding-block:56px 80px}
-.rail{min-width:0;align-self:stretch}
-.rail-inner{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px}
-.rail-box{border-top:2px solid var(--green);padding-top:14px}
-.rail-title{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.profile-field{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
-.profile-field label{font-size:.69rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.input,.textarea,.select{
-  width:100%;border:1px solid var(--line-strong);border-radius:var(--r-sm);
-  background:var(--surface);color:var(--ink);padding:10px 11px;font-size:.86rem;line-height:1.5;
+.approval{
+  align-self:start;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:14px;
+  position:sticky;
+  top:76px;
 }
-.input:focus,.textarea:focus,.select:focus{border-color:var(--focus);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--focus) 18%,transparent)}
-.textarea{resize:vertical;min-height:110px}
-.rail-save-note{font-size:.7rem;line-height:1.5;color:var(--muted);margin-top:2px}
-.rail-save-note strong{color:var(--ink-2);font-weight:500}
-.progress-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px}
-.progress-row strong{font-family:var(--display);font-size:1.5rem;line-height:1;color:var(--green)}
-.progress-row span{font-size:.7rem;color:var(--muted)}
-.progress-track{height:7px;border-radius:99px;background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
-.progress-track span{display:block;height:100%;width:0;background:var(--green);transition:width .35s ease}
-.rail-counts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:12px;background:var(--line);border:1px solid var(--line)}
-.rail-count{background:var(--surface);padding:9px 8px;text-align:center}
-.rail-count b{display:block;font-size:.95rem;line-height:1.2}
-.rail-count span{display:block;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.nav-list{display:flex;flex-direction:column;gap:2px}
-.nav-link{
-  display:flex;align-items:center;gap:10px;padding:8px 9px;border-radius:var(--r-sm);
-  color:var(--ink-2);text-decoration:none;font-size:.82rem;line-height:1.3;
-  border-left:2px solid transparent;
+.approval-title{
+  font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:10px;
 }
-.nav-link:hover{background:var(--pea-soft);color:var(--ink)}
-.nav-link.is-active{background:var(--pea-soft);border-left-color:var(--green);color:var(--ink);font-weight:500}
-.nav-num{font-family:var(--mono);font-size:.66rem;color:var(--muted);width:18px;flex:none}
-.nav-link.is-active .nav-num{color:var(--green)}
-.rail-actions{display:flex;flex-direction:column;gap:7px}
-.rail-actions .btn{justify-content:flex-start;width:100%}
+.approval .tick{margin-bottom:8px;display:flex}
+.approval .tick:last-of-type{margin-bottom:0}
+.change{margin-top:9px}
+.change textarea{
+  width:100%;min-height:86px;resize:vertical;
+  border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);color:var(--ink);
+  padding:8px 9px;font-size:.78rem;line-height:1.45;
+}
+.change textarea:focus{border-color:var(--focus);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--focus) 16%,transparent)}
+.check-note{
+  display:flex;gap:7px;
+  margin-top:13px;padding-top:10px;border-top:1px solid var(--line);
+  font-size:.69rem;line-height:1.45;color:var(--amber);
+}
+.check-note .dot{width:6px;height:6px;margin-top:4px}
 
-/* ---------- content sections ---------- */
-.content{min-width:0;display:flex;flex-direction:column;gap:72px}
-.section{scroll-margin-top:92px;min-width:0}
-.section-head{border-top:2px solid var(--green);padding-top:18px;margin-bottom:26px}
-.section-head .eyebrow{margin-bottom:8px}
-.section-title{font-family:var(--display);font-size:clamp(2rem,4vw,2.8rem);line-height:1;letter-spacing:.005em;color:var(--ink)}
-.section-intro{max-width:var(--measure);color:var(--ink-2);margin-top:12px;font-size:.96rem;line-height:1.65}
-.section-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.count-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:4px 10px;font-size:.7rem;color:var(--ink-2)}
-.count-chip b{font-family:var(--mono);font-weight:500}
-
-/* ---------- notice / notes ---------- */
-.notice{
-  border:1px solid var(--line);border-left:4px solid var(--pea);
-  background:var(--paper-2);border-radius:var(--r-sm);padding:22px;
+/* finish */
+.finish{
+  margin-top:40px;
+  border-top:2px solid var(--green);
+  padding-top:30px;
+  padding-bottom:44px;
 }
-.notice-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
-.notice-icon{width:30px;height:30px;flex:none;border-radius:50%;background:var(--green);color:var(--lentil);display:grid;place-items:center;font-family:var(--display);font-size:1rem}
-.notice h3{font-family:var(--display);font-size:1.55rem;line-height:1.05;margin-bottom:4px}
-.notice p{color:var(--ink-2);font-size:.9rem;max-width:72ch}
-.note-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
-.note-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:15px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.note-card .note-num{font-family:var(--display);font-size:1.5rem;line-height:1;color:var(--pea)}
-.note-card h4{font-size:.86rem;line-height:1.35}
-.note-card p{font-size:.8rem;line-height:1.55;color:var(--ink-2)}
-.note-card .note-source{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:auto}
-.how-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}
-.how-step{background:var(--surface);padding:16px;min-width:0}
-.how-step b{display:block;font-family:var(--display);font-size:1.15rem;line-height:1;color:var(--green);margin-bottom:7px}
-.how-step p{font-size:.8rem;line-height:1.55;color:var(--ink-2)}
-.callout{border:1px solid var(--line);border-left:4px solid var(--danger);background:var(--danger-soft);border-radius:var(--r-sm);padding:14px 16px;margin-top:18px}
-.callout strong{display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--danger);margin-bottom:4px}
-.callout p{font-size:.85rem;color:var(--ink-2);line-height:1.55}
-.callout a{font-weight:500}
-
-/* ---------- route cards ---------- */
-.routes{display:flex;flex-direction:column;gap:26px}
-.route{
-  background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent,var(--pea));
-  border-radius:var(--radius);overflow:hidden;scroll-margin-top:92px;
+.finish h2{
+  font-family:var(--display);
+  font-size:clamp(1.8rem,3.6vw,2.4rem);
+  line-height:1;
+  margin:6px 0 6px;
 }
-.route-head{
-  display:flex;align-items:flex-start;gap:16px;padding:20px 22px 18px;
-  background:color-mix(in srgb,var(--accent,var(--pea)) 8%,var(--surface));
-  border-bottom:1px solid var(--line);
+.finish-lede{max-width:62ch;color:var(--ink-2);font-size:.88rem;line-height:1.55}
+.finish-fields{
+  display:grid;
+  grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);
+  gap:16px;
+  margin-top:20px;
 }
-.route-id{
-  width:48px;height:48px;flex:none;border-radius:var(--r-sm);display:grid;place-items:center;
-  background:var(--accent,var(--pea));color:var(--accent-ink,#FFFDE9);
-  font-family:var(--display);font-size:1.35rem;line-height:1;
-}
-.route-title-wrap{min-width:0;flex:1 1 auto}
-.route-title-wrap .eyebrow{margin-bottom:5px;color:var(--ink-2)}
-.route-title{font-family:var(--display);font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1;color:var(--ink)}
-.route-status{flex:none;margin-left:auto}
-.status-control{display:flex;flex-wrap:wrap;gap:3px;border:1px solid var(--line-strong);border-radius:var(--r-sm);padding:2px;background:var(--surface)}
-.status-control button{
-  border:0;background:transparent;color:var(--ink-2);padding:6px 9px;border-radius:2px;
-  font-size:.68rem;font-weight:500;line-height:1.2;letter-spacing:.02em;
-}
-.status-control button:hover{background:var(--paper-2);color:var(--ink)}
-.status-control button.is-active{background:var(--green);color:var(--lentil)}
-.status-control button[data-status="approved"].is-active{background:var(--ok);color:var(--lentil)}
-.status-control button[data-status="changes"].is-active{background:var(--warn);color:var(--lentil)}
-.status-control button[data-status="rejected"].is-active{background:var(--danger);color:var(--lentil)}
-:root[data-theme="dark"] .status-control button.is-active{color:#10240F}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .status-control button.is-active{color:#10240F}
-}
-.status-control.small button{font-size:.64rem;padding:5px 7px}
-.route-meta{display:flex;flex-wrap:wrap;gap:8px 20px;padding:12px 22px;border-bottom:1px solid var(--line);background:var(--paper)}
-.meta-item{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);min-width:0}
-.meta-item b{font-weight:500;color:var(--ink-2)}
-.meta-item a{font-weight:500}
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);padding-inline:14px;overflow-x:auto;scrollbar-width:thin}
-.tab{
-  border:0;background:transparent;color:var(--muted);padding:12px 14px 10px;white-space:nowrap;
-  font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
-  border-bottom:3px solid transparent;display:flex;align-items:center;gap:7px;
-}
-.tab:hover{color:var(--ink);background:var(--paper)}
-.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent,var(--green))}
-.tab-count{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--paper-2);border:1px solid var(--line);font-size:.62rem;color:var(--ink-2);font-family:var(--mono)}
-.tab[aria-selected="true"] .tab-count{background:var(--accent,var(--green));border-color:var(--accent,var(--green));color:var(--accent-ink,#FFFDE9)}
-.tab-panel{padding:22px}
-.route-flags{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
-.flag-mini{display:flex;align-items:flex-start;gap:9px;padding:8px 10px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-sm);font-size:.78rem;line-height:1.45;color:var(--ink-2)}
-.flag-mini .dot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex:none}
-.dot.high{background:var(--danger)}
-.dot.medium{background:var(--warn)}
-.dot.low{background:var(--ok)}
-.flag-mini a{font-weight:500}
-.copy-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
-.save-state{font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-.save-state .edited{color:var(--warn);font-weight:500}
-.copy-block{margin-bottom:24px}
-.copy-block:last-child{margin-bottom:0}
-.copy-label{font-size:.65rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-.copy-text{
-  font-size:.98rem;line-height:1.72;color:var(--ink);
-  white-space:pre-wrap;overflow-wrap:anywhere;max-width:var(--measure);
-}
-.copy-line{display:block;min-height:.4em}
-.copy-line.check{color:var(--ok);font-weight:500}
-.copy-line.blank{min-height:.7em}
-.copy-missing{font-size:.9rem;color:var(--warn);background:var(--warn-soft);border:1px dashed var(--warn);border-radius:var(--r-sm);padding:8px 10px;display:inline-block}
-.revision-history{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
-.revision-history summary{cursor:pointer;font-size:.74rem;color:var(--muted);font-weight:500}
-.revision-history ol{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-direction:column;gap:8px}
-.revision-history li{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.75rem;color:var(--ink-2);border-bottom:1px dashed var(--line);padding-bottom:8px}
-.revision-history li:last-child{border-bottom:0;padding-bottom:0}
-.edit-form{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .field{display:flex;flex-direction:column;gap:5px;min-width:0}
-.field.span-2{grid-column:1/-1}
-.field label,.field .field-label{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.field .hint{font-size:.7rem;color:var(--muted);font-weight:400;letter-spacing:0;text-transform:none}
-.form-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-top:16px}
-.form-note{font-size:.72rem;color:var(--muted);margin-right:auto;align-self:center}
-
-/* ---------- comments ---------- */
-.comments-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:14px}
-.comments-head h4{font-size:.92rem}
-.comments-list{display:flex;flex-direction:column}
-.comment{display:grid;grid-template-columns:34px minmax(0,1fr);gap:11px;padding:14px 0;border-top:1px solid var(--line)}
-.comment:first-child{border-top:0;padding-top:0}
-.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--pea-soft);color:var(--green);font-size:.72rem;font-weight:700;letter-spacing:.02em}
-.comment-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px}
-.comment-name{font-size:.8rem;font-weight:600;color:var(--ink)}
-.comment-time{font-size:.66rem;color:var(--muted)}
-.comment-type{font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:99px;border:1px solid var(--line);color:var(--ink-2);background:var(--paper)}
-.comment-type.request{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
-.comment-type.edit{color:var(--ok);border-color:var(--ok);background:var(--ok-soft)}
-.comment-text{font-size:.84rem;line-height:1.6;color:var(--ink-2);white-space:pre-wrap;overflow-wrap:anywhere}
-.comment.resolved{opacity:.56}
-.comment-actions{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
-.comment-actions button{border:0;background:transparent;color:var(--muted);font-size:.66rem;padding:0;text-decoration:underline;text-underline-offset:2px}
-.comment-actions button:hover{color:var(--ink)}
-.comment-form{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
-.comment-form .form-grid{grid-template-columns:160px 1fr}
-.comment-form textarea{min-height:88px}
-.comments-empty{font-size:.82rem;color:var(--muted);padding:10px 0 2px;line-height:1.55}
-
-/* ---------- rewrites ---------- */
-.rewrite-intro{font-size:.84rem;color:var(--ink-2);line-height:1.6;max-width:70ch;margin-bottom:16px}
-.rewrite-form{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px}
-.rewrite-form .textarea{min-height:150px}
-.rewrite-list{display:flex;flex-direction:column;gap:12px;margin-top:18px}
-.rewrite-card{border:1px solid var(--line);background:var(--surface);border-radius:var(--r-sm);padding:14px}
-.rewrite-card-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start;margin-bottom:6px}
-.rewrite-card h5{font-size:.86rem;line-height:1.35;color:var(--ink)}
-.rewrite-meta{font-size:.66rem;color:var(--muted)}
-.rewrite-card details{margin-top:8px}
-.rewrite-card summary{cursor:pointer;font-size:.72rem;color:var(--ink-2);font-weight:500}
-.rewrite-card .copy-text{font-size:.84rem;margin-top:10px}
-.rewrite-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-.suggested-note{font-size:.7rem;color:var(--muted);line-height:1.5;margin-top:8px}
-
-/* ---------- creatives ---------- */
-.creative-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.creative-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;scroll-margin-top:92px;min-width:0}
-.creative-img-btn{display:block;width:100%;padding:0;border:0;background:var(--paper-2);position:relative;text-align:left}
-.creative-img-btn img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .3s ease}
-.creative-img-btn:hover img{transform:scale(1.012)}
-.asset-chip{position:absolute;left:12px;top:12px;background:rgba(24,65,33,.88);color:var(--lentil);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 7px;border-radius:2px;backdrop-filter:blur(4px)}
-.creative-body{padding:16px 17px 18px}
-.creative-top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px}
-.creative-top .eyebrow{font-size:.62rem}
-.creative-card h3{font-family:var(--display);font-size:1.55rem;line-height:1.02;margin-bottom:4px}
-.flavour{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent,var(--green));font-weight:700;margin-bottom:10px}
-.creative-note{font-size:.79rem;line-height:1.55;color:var(--ink-2);margin-bottom:11px}
-.creative-flags{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
-.creative-flag{display:flex;gap:7px;align-items:flex-start;font-size:.71rem;line-height:1.45;color:var(--ink-2)}
-.creative-flag .dot{margin-top:4px}
-.creative-card .status-control{margin-bottom:12px}
-.comments-drawer{border-top:1px solid var(--line);padding-top:10px}
-.comments-drawer>summary{cursor:pointer;font-size:.72rem;font-weight:500;color:var(--ink-2)}
-.comments-drawer[open]>summary{margin-bottom:12px}
-.comments-drawer .comment-form{margin-top:12px}
-.lightbox{position:fixed;inset:0;z-index:200;background:rgba(7,19,11,.94);display:grid;grid-template-rows:1fr auto;padding:20px;padding-top:max(20px,env(safe-area-inset-top,0px));padding-bottom:max(20px,env(safe-area-inset-bottom,0px))}
-.lightbox-stage{display:grid;place-items:center;min-height:0;position:relative}
-.lightbox img{max-width:min(92vw,900px);max-height:84vh;object-fit:contain;box-shadow:0 24px 70px rgba(0,0,0,.45);background:#0b160e}
-.lightbox-close{position:absolute;top:0;right:0;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,253,233,.3);background:rgba(24,65,33,.7);color:#FFFDE9;font-size:1.2rem;display:grid;place-items:center}
-.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,253,233,.3);background:rgba(24,65,33,.7);color:#FFFDE9;font-size:1.2rem;display:grid;place-items:center}
-.lightbox-prev{left:0}
-.lightbox-next{right:0}
-.lightbox-caption{color:#FFFDE9;text-align:center;padding:14px 10px 0;font-size:.8rem}
-.lightbox-caption b{font-weight:500}
-
-/* ---------- compliance ---------- */
-.filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
-.filter-btn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);padding:7px 12px;border-radius:99px;font-size:.72rem;font-weight:500;display:inline-flex;align-items:center;gap:6px}
-.filter-btn:hover{background:var(--pea-soft);border-color:var(--pea)}
-.filter-btn.is-active{background:var(--green);border-color:var(--green);color:var(--lentil)}
-.filter-btn .n{font-family:var(--mono);font-size:.65rem;opacity:.8}
-.flags{display:flex;flex-direction:column;gap:14px}
-.flag-card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--sev,var(--warn));border-radius:var(--r-sm);padding:18px 20px;scroll-margin-top:100px}
-.flag-card[data-severity="high"]{--sev:var(--danger);--sev-soft:var(--danger-soft);--sev-text:var(--danger)}
-.flag-card[data-severity="medium"]{--sev:var(--warn);--sev-soft:var(--warn-soft);--sev-text:var(--warn)}
-.flag-card[data-severity="low"]{--sev:var(--ok);--sev-soft:var(--ok-soft);--sev-text:var(--ok)}
-.flag-head{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;margin-bottom:9px}
-.severity{font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border-radius:99px;background:var(--sev-soft);color:var(--sev-text);border:1px solid var(--sev);white-space:nowrap}
-.flag-id{font-family:var(--mono);font-size:.64rem;color:var(--muted);padding-top:3px}
-.flag-scope{font-size:.66rem;color:var(--muted);padding-top:3px}
-.flag-scope a{font-weight:500}
-.flag-head h3{flex-basis:100%;font-family:var(--display);font-size:1.45rem;line-height:1.05;color:var(--ink);margin-top:2px}
-.flag-why{font-size:.86rem;line-height:1.62;color:var(--ink-2);max-width:var(--measure)}
-.flag-lines{margin-top:10px}
-.flag-lines summary{cursor:pointer;font-size:.7rem;font-weight:500;color:var(--muted);letter-spacing:.03em}
-.flag-lines ul{margin:8px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:5px}
-.flag-lines li{font-size:.8rem;line-height:1.5;color:var(--ink-2)}
-.flag-action{margin-top:12px;background:var(--sev-soft);border:1px solid color-mix(in srgb,var(--sev) 35%,transparent);border-radius:var(--r-sm);padding:11px 13px}
-.flag-action strong{display:block;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sev-text);margin-bottom:3px}
-.flag-action p{font-size:.82rem;line-height:1.55;color:var(--ink-2)}
-.checks-passed{margin-top:26px;border:1px solid var(--line);border-left:4px solid var(--ok);background:var(--ok-soft);border-radius:var(--r-sm);padding:18px 20px}
-.checks-passed h3{font-family:var(--display);font-size:1.4rem;line-height:1.05;margin-bottom:10px;color:var(--ink)}
-.checks-passed ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
-.checks-passed li{display:flex;gap:9px;font-size:.82rem;line-height:1.5;color:var(--ink-2)}
-.checks-passed li::before{content:"✓";color:var(--ok);font-weight:700;flex:none}
-.brand-notes{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.brand-note{border:1px solid var(--line);background:var(--paper-2);border-radius:var(--r-sm);padding:16px}
-.brand-note h3{font-family:var(--display);font-size:1.25rem;line-height:1.05;margin-bottom:8px}
-.brand-note ul{margin:0;padding-left:17px;display:flex;flex-direction:column;gap:5px}
-.brand-note li{font-size:.78rem;line-height:1.5;color:var(--ink-2)}
-.brand-note .source{display:block;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:10px}
-
-/* ---------- sign-off ---------- */
-.signoff{background:var(--paper-2);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:var(--radius);padding:24px}
-.signoff-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:32px;align-items:start}
-.signoff h3{font-family:var(--display);font-size:1.9rem;line-height:1;margin-bottom:6px}
-.signoff p{font-size:.86rem;color:var(--ink-2);line-height:1.6;max-width:55ch}
-.signoff-form{margin-top:18px}
-.signoff-form .textarea{min-height:100px}
-.stamp-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:220px;border:1px dashed var(--line-strong);border-radius:var(--r-sm);padding:16px;background:var(--surface)}
-.stamp{
-  border:3px double var(--stamp-color,var(--green));color:var(--stamp-color,var(--green));
-  padding:16px 18px;text-align:center;transform:rotate(-2.2deg);max-width:280px;width:100%;
-  background:color-mix(in srgb,var(--stamp-color,var(--green)) 5%,var(--surface));
+.field label{font-size:.64rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.field input,.field textarea{
+  width:100%;
+  border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);color:var(--ink);
+  padding:9px 10px;font-size:.86rem;line-height:1.5;
 }
-.stamp .stamp-top{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px}
-.stamp .stamp-decision{font-family:var(--display);font-size:1.55rem;line-height:1.02;margin-bottom:7px}
-.stamp .stamp-name{font-size:.8rem;font-weight:600}
-.stamp .stamp-meta{font-size:.68rem;margin-top:3px}
-.stamp-empty{text-align:center;color:var(--muted);font-size:.8rem;line-height:1.6;max-width:240px}
-.stamp-empty strong{display:block;font-family:var(--display);font-size:1.3rem;color:var(--ink);margin-bottom:4px;font-weight:400}
-.signoff-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.signoff-actions .btn{flex:1 1 auto}
+.field textarea{min-height:78px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--focus);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--focus) 16%,transparent)}
+.finish-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:16px}
+.btn{
+  min-height:38px;padding:8px 15px;
+  border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);color:var(--ink);
+  font-size:.78rem;font-weight:500;line-height:1.2;
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+}
+.btn:hover{background:var(--paper-2);border-color:var(--green)}
+.btn-primary{background:var(--green);border-color:var(--green);color:var(--lentil)}
+.btn-primary:hover{background:var(--green);opacity:.9;color:var(--lentil)}
+:root[data-theme="dark"] .btn-primary{background:var(--pea);border-color:var(--pea);color:#10240F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-primary{background:var(--pea);border-color:var(--pea);color:#10240F}}
+.link-btn{
+  border:0;background:transparent;color:var(--muted);
+  font-size:.72rem;padding:8px 4px;text-decoration:underline;text-underline-offset:3px;
+}
+.link-btn:hover{color:var(--ink)}
+.status{
+  margin-top:14px;
+  font-size:.71rem;
+  color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.storage-note{margin-top:6px;font-size:.7rem;color:var(--amber)}
 
-/* ---------- activity ---------- */
-.activity-list{display:flex;flex-direction:column;border-left:2px solid var(--line);margin-left:7px}
-.activity-item{position:relative;padding:0 0 18px 22px}
-.activity-item::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--line-strong)}
-.activity-item[data-kind="comment"]::before{border-color:var(--pea)}
-.activity-item[data-kind="edit"]::before{border-color:var(--warn)}
-.activity-item[data-kind="rewrite"]::before{border-color:var(--beet,#A20067)}
-.activity-item[data-kind="status"]::before{border-color:var(--green)}
-.activity-item[data-kind="signoff"]::before{border-color:var(--ok);background:var(--ok)}
-.activity-item h4{font-size:.8rem;line-height:1.4;margin-bottom:2px;color:var(--ink)}
-.activity-item p{font-size:.75rem;line-height:1.5;color:var(--muted)}
-.activity-empty{font-size:.84rem;color:var(--muted);padding:6px 0;line-height:1.6}
+/* footer */
+.footer{
+  border-top:1px solid var(--line);
+  padding-top:20px;
+  padding-bottom:28px;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  font-size:.69rem;
+  color:var(--muted);
+}
 
-/* ---------- footer ---------- */
-.footer{border-top:1px solid var(--line);background:var(--paper-2);padding-block:34px 42px}
-.footer-inner{max-width:var(--shell);margin-inline:auto;display:grid;grid-template-columns:1.1fr 1fr;gap:36px}
-.footer h3{font-family:var(--display);font-size:1.4rem;line-height:1.05;margin-bottom:6px}
-.footer p,.footer li{font-size:.75rem;line-height:1.6;color:var(--muted)}
-.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
-.footer b{color:var(--ink-2);font-weight:500}
-.footer .rule{height:1px;background:var(--line);margin-block:14px}
-
-/* ---------- toast ---------- */
+/* toast */
 .toast{
-  position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,14px);
-  z-index:300;background:var(--green);color:var(--lentil);border:1px solid rgba(255,253,233,.2);
-  border-radius:var(--r-sm);padding:11px 16px;font-size:.8rem;line-height:1.4;box-shadow:var(--shadow);
-  opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;max-width:calc(100vw - 32px);
+  position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));
+  transform:translate(-50%,12px);
+  z-index:100;
+  background:var(--green);color:var(--lentil);
+  border-radius:3px;padding:10px 14px;
+  font-size:.78rem;line-height:1.4;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+  opacity:0;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;
+  max-width:calc(100vw - 32px);
 }
 .toast.is-on{opacity:1;transform:translate(-50%,0)}
 :root[data-theme="dark"] .toast{background:var(--pea);color:#10240F}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .toast{background:var(--pea);color:#10240F}}
 
-/* ---------- responsive ---------- */
-@media (max-width:1060px){
-  .hero-grid{grid-template-columns:1fr;gap:30px;align-items:start}
-  .control-card{max-width:460px}
-  .shell{grid-template-columns:1fr;gap:36px;padding-block:40px 64px}
-  .rail-inner{position:static;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;align-items:start}
-  .rail-box:first-child{grid-column:1/-1}
-  .rail-actions{flex-direction:row;flex-wrap:wrap}
-  .rail-actions .btn{width:auto}
-  .nav-list{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px}
-  .section{scroll-margin-top:80px}
+/* responsive */
+@media (max-width:1080px){
+  .intro{grid-template-columns:1fr;gap:30px}
+  .checks{max-width:540px}
+  .creative-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 }
-@media (max-width:760px){
-  .hero-inner{padding-block:40px 34px}
-  .hero-stats{grid-template-columns:1fr 1fr}
-  .note-grid,.how-grid{grid-template-columns:1fr}
-  .creative-grid{grid-template-columns:1fr}
-  .signoff-grid{grid-template-columns:1fr}
-  .brand-notes{grid-template-columns:1fr}
-  .footer-inner{grid-template-columns:1fr}
-  .route-head{flex-wrap:wrap}
-  .route-status{margin-left:0;flex-basis:100%}
-  .route-status .status-control{width:100%}
-  .route-status .status-control button{flex:1 1 auto}
-  .form-grid,.comment-form .form-grid{grid-template-columns:1fr}
-  .field.span-2{grid-column:auto}
+@media (max-width:900px){
+  .copy-block{grid-template-columns:1fr;gap:20px}
+  .approval{position:static;max-width:360px}
+  .copy-block:first-child{padding-top:4px}
+}
+@media (max-width:680px){
+  .top-inner{min-height:54px}
   .doc-label{display:none}
-  .top-actions .save-indicator{display:none}
-  .rail-inner{grid-template-columns:1fr}
-  .nav-list{grid-template-columns:1fr}
-  .hero h1{max-width:14ch}
+  .intro{padding-top:42px;padding-bottom:34px}
+  .intro h1{font-size:clamp(2.7rem,12vw,4rem);max-width:12ch}
+  .creative-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .finish-fields{grid-template-columns:1fr}
+  .section-note{margin-left:0}
+  .copy-meta{gap:3px 14px}
 }
 @media (max-width:480px){
-  body{padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
-  .topbar-inner{min-height:58px}
-  .brand-name{font-size:1.08rem}
-  .top-actions{gap:5px}
-  .menu>summary{padding:7px 9px}
-  .hero-stat strong{font-size:1.55rem}
-  .tab-panel{padding:16px}
-  .route-head{padding:16px}
-  .route-meta{padding:10px 16px;gap:7px 14px}
-  .status-control button{padding:6px 6px;font-size:.62rem}
-  .signoff{padding:18px}
-  .lightbox{padding:12px}
-  .lightbox img{max-height:78vh}
+  .wrap{padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+  .brand{font-size:1.15rem}
+  .creative-grid{grid-template-columns:1fr;gap:22px}
+  .creative-link img{max-height:none}
+  .approval{max-width:none}
+  .finish-actions .btn{flex:1 1 auto}
 }
 @media print{
-  .topbar,.rail,.tabs,.status-control,.btn,.menu,.toast,.lightbox,.comment-form,.edit-form,.rewrite-form,.signoff-form,.signoff-actions,.filter-bar,.activity-list{display:none!important}
-  body{background:#fff;color:#111;font-size:10.5pt;padding:0}
+  .topbar,.theme-btn,.finish-actions,.toast,.full-link,.link-btn{display:none!important}
+  body{background:#fff;color:#111;font-size:10pt}
   body::before{display:none}
-  .shell{display:block;padding:0}
-  .hero{background:#fff;border-bottom:1px solid #999}
-  .hero-grid{grid-template-columns:1fr}
-  .control-card{background:#eee;color:#111;box-shadow:none;border:1px solid #999}
-  .control-card *{color:#111!important}
-  .control-progress{background:#ccc}
-  .route,.creative-card,.flag-card,.notice,.signoff{break-inside:avoid;box-shadow:none}
-  .tab-panel{display:block!important;padding:12px 0}
-  .tab-panel[hidden]{display:block!important}
-  .copy-text{max-width:none;font-size:10.5pt}
-  .creative-grid{grid-template-columns:1fr 1fr}
-  .creative-img-btn img{max-height:300px}
+  .intro{padding-top:0}
+  .creative-grid{grid-template-columns:repeat(5,1fr)}
+  .copy-block{break-inside:avoid;grid-template-columns:1fr 200px;gap:20px}
+  .approval{position:static;background:#f6f6f6;border-color:#ccc}
+  .section{border-top:1px solid #999}
 }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to the document</a>
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="#top" aria-label="Soul Kitchen approval document, back to top">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-        <ellipse cx="13" cy="11" rx="7.5" ry="5.2" fill="currentColor" opacity=".95"/>
-        <path d="M17.4 14.2 26 26.5" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
-      </svg>
-      <span class="brand-name">Soul Kitchen</span>
-      <span class="doc-label">Relaunch approval</span>
-    </a>
-    <div class="top-actions">
-      <span class="save-indicator" id="save-indicator"><span class="save-dot" id="save-dot"></span><span id="save-text">Saves on this device</span></span>
-      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
-        <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
-      </button>
-      <details class="menu" id="export-menu">
-        <summary>Export</summary>
-        <div class="menu-panel">
-          <button type="button" data-action="copy-summary">Copy approval summary</button>
-          <button type="button" data-action="download-md">Download summary (.md)</button>
-          <button type="button" data-action="download-json">Download record (.json)</button>
-          <p class="menu-note">Saves in this browser only. Export to send the record to the team.</p>
-        </div>
-      </details>
-    </div>
+  <div class="wrap top-inner">
+    <a class="brand" href="#top">Soul Kitchen</a>
+    <span class="doc-label">Relaunch copy &amp; creative approval</span>
+    <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+      <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+    </button>
   </div>
 </header>
 
-<main id="main">
-  <section class="hero" id="top">
-    <div class="hero-inner">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Relaunch campaign · October 2026</p>
-          <h1>Copy &amp; creative approval</h1>
-          <p class="hero-sub">Five copy routes and five finished 4:5 creatives for the Soul Kitchen relaunch. Read the claims against Bella’s notes, comment or edit the copy, save a rewrite, then sign off. The supplied copy is always preserved underneath your changes.</p>
-          <div class="hero-stats" aria-label="Document summary">
-            <div class="hero-stat"><strong>5</strong><span>Copy routes</span></div>
-            <div class="hero-stat"><strong>5</strong><span>Creatives</span></div>
-            <div class="hero-stat"><strong id="stat-flags">23</strong><span>Claim checks</span></div>
-            <div class="hero-stat"><strong id="stat-high">6</strong><span>High priority</span></div>
-          </div>
-          <div class="flavour-dots" aria-label="Brand flavour palette">
-            <span>Flavour palette</span>
-            <i style="background:#678338" title="Broccoli, Leek &amp; Spinach"></i>
-            <i style="background:#E35205" title="Sweet Potato &amp; Pumpkin"></i>
-            <i style="background:#CB333B" title="Tomato &amp; Pepper"></i>
-            <i style="background:#A20067" title="Beetroot &amp; Coconut"></i>
-            <i style="background:#C7A984" title="Mushroom, Thyme &amp; Black Pepper"></i>
-          </div>
-        </div>
-        <aside class="control-card" aria-label="Document control">
-          <p class="control-eyebrow">Document control</p>
-          <p class="control-status" id="doc-status">Awaiting approval</p>
-          <p class="control-note">Review status updates as routes and creatives are marked. Sign-off is recorded at the end of the document.</p>
-          <div class="control-rule"></div>
-          <dl style="margin:0">
-            <div class="control-row"><dt>Prepared for</dt><dd>Bella Acland</dd></div>
-            <div class="control-row"><dt>Campaign</dt><dd>Relaunch</dd></div>
-            <div class="control-row"><dt>Date</dt><dd>20 Oct 2026</dd></div>
-            <div class="control-row"><dt>Version</dt><dd>Draft 1</dd></div>
-            <div class="control-row"><dt>Approved</dt><dd id="control-approved">0 of 10</dd></div>
-          </dl>
-          <div class="control-progress" aria-hidden="true"><span id="control-bar"></span></div>
-          <a class="btn" href="#sign-off">Go to sign-off</a>
-        </aside>
-      </div>
+<main id="top">
+  <section class="intro wrap">
+    <div class="intro-copy">
+      <p class="eyebrow">Relaunch · October 2026</p>
+      <h1>Copy &amp; creative approval</h1>
+      <p class="lede">Five creatives and five copy routes for the relaunch. Please let us know if you approve them: tick what you approve, and add a copy change where something needs to move.</p>
+      <p class="prepared">Prepared for Bella Acland · Soul Kitchen</p>
     </div>
   </section>
 
-  <div class="shell">
-    <aside class="rail">
-      <div class="rail-inner">
-        <div class="rail-box">
-          <p class="rail-title">Reviewing as</p>
-          <div class="profile-field">
-            <label for="reviewer-name">Your name</label>
-            <input class="input" id="reviewer-name" name="reviewer-name" autocomplete="name" placeholder="e.g. Bella Acland">
-          </div>
-          <div class="profile-field">
-            <label for="reviewer-role">Role <span class="muted">(optional)</span></label>
-            <input class="input" id="reviewer-role" name="reviewer-role" autocomplete="organization-title" placeholder="e.g. Founder">
-          </div>
-          <p class="rail-save-note"><strong>Saving is local to this browser.</strong> Comments, edits and rewrites stay on this device. Use Export when you are ready to send the record to the team.</p>
-        </div>
-
-        <div class="rail-box">
-          <p class="rail-title">Review progress</p>
-          <div class="progress-row"><strong id="progress-label">0 / 10</strong><span>approved</span></div>
-          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
-          <div class="rail-counts">
-            <div class="rail-count"><b id="count-comments">0</b><span>Comments</span></div>
-            <div class="rail-count"><b id="count-rewrites">0</b><span>Rewrites</span></div>
-            <div class="rail-count"><b id="count-edits">0</b><span>Edits</span></div>
-          </div>
-        </div>
-
-        <div class="rail-box">
-          <p class="rail-title">Sections</p>
-          <nav class="nav-list" aria-label="Document sections">
-            <a class="nav-link" href="#overview"><span class="nav-num">01</span>Overview</a>
-            <a class="nav-link" href="#copy"><span class="nav-num">02</span>Copy routes</a>
-            <a class="nav-link" href="#creatives"><span class="nav-num">03</span>Creatives</a>
-            <a class="nav-link" href="#compliance"><span class="nav-num">04</span>Claim checks</a>
-            <a class="nav-link" href="#sign-off"><span class="nav-num">05</span>Sign-off</a>
-            <a class="nav-link" href="#activity"><span class="nav-num">06</span>Activity</a>
-          </nav>
-        </div>
-
-        <div class="rail-box">
-          <p class="rail-title">Quick actions</p>
-          <div class="rail-actions">
-            <button class="btn btn-small" type="button" data-action="copy-summary">Copy summary</button>
-            <button class="btn btn-small" type="button" data-action="download-json">Download record</button>
-            <button class="btn btn-small btn-danger" type="button" data-action="reset" id="reset-btn">Reset saved changes</button>
-          </div>
-        </div>
+  <section class="section wrap" id="creatives">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <div>
+        <h2>The creatives</h2>
+        <p>Five finished 4:5 proofs. Open any one full size.</p>
       </div>
-    </aside>
-
-    <div class="content">
-      <section class="section" id="overview">
-        <div class="section-head">
-          <p class="eyebrow">Read this first</p>
-          <h2 class="section-title">What needs a decision</h2>
-          <p class="section-intro">The copy is strong on product truth, but three areas need a decision before anything goes live: Lion’s Mane function claims, the Mushroom Nourish Award, and digestive-health language. Bella’s notes are the source of truth. The claim checks below quote the exact lines that need attention.</p>
-          <div class="section-meta">
-            <span class="count-chip"><b>6</b> high priority</span>
-            <span class="count-chip"><b>10</b> medium</span>
-            <span class="count-chip"><b>7</b> low</span>
-            <span class="count-chip"><b>5</b> routes</span>
-          </div>
-        </div>
-
-        <div class="notice">
-          <div class="notice-head">
-            <div class="notice-icon" aria-hidden="true">!</div>
-            <div>
-              <h3>Bella’s non-negotiables</h3>
-              <p>These three notes override anything in the draft. The first two are launch blockers for the Mushroom route.</p>
-            </div>
-          </div>
-          <div class="note-grid">
-            <div class="note-card">
-              <span class="note-num">01</span>
-              <h4>No Lion’s Mane function claims</h4>
-              <p>You can never claim Lion’s Mane delivers any function. Keep the ingredient name, but remove focus, memory, clarity, cognitive resilience and “works as hard as your supplements”. The corrected figure is 2,000mg.</p>
-              <span class="note-source">Critical marketing notes · Note 1</span>
-            </div>
-            <div class="note-card">
-              <span class="note-num">02</span>
-              <h4>Mushroom has no Nourish Award</h4>
-              <p>Do not call Mushroom &amp; Thyme “award-winning” and do not attach the Nourish Awards 2024 &amp; 2025 line to the mushroom flavour. Only use the award on flavours that actually won.</p>
-              <span class="note-source">Critical marketing notes · Note 1</span>
-            </div>
-            <div class="note-card">
-              <span class="note-num">03</span>
-              <h4>Never “100% whole vegetables”</h4>
-              <p>Say “packed with up to 72% real veg” and explain the rest: herbs, spices and natural ingredients. Do not say every bowl is 72%, and do not turn “up to” into a flat claim.</p>
-              <span class="note-source">Critical marketing notes · Note 3 · Brand book p7</span>
-            </div>
-          </div>
-          <div class="callout">
-            <strong>Three lines to fix before launch</strong>
-            <p><a href="#flag-h1">H1 · Lion’s Mane function claims in route 03</a> · <a href="#flag-h2">H2 · Mushroom Nourish Award claim in route 03</a> · <a href="#flag-h3">H3 · Digestive-health claims in route 02 and creative 03</a></p>
-          </div>
-        </div>
-
-        <div class="notice" style="margin-top:18px;border-left-color:var(--green)">
-          <div class="notice-head">
-            <div class="notice-icon" aria-hidden="true">→</div>
-            <div>
-              <h3>How to use this document</h3>
-              <p>Work through the routes in order. The original copy is always kept; your edits sit on top and are listed in the revision history.</p>
-            </div>
-          </div>
-          <div class="how-grid">
-            <div class="how-step"><b>1 · Review</b><p>Read the copy and the claim checks. Each route shows its suggested creative and its open flags.</p></div>
-            <div class="how-step"><b>2 · Comment or edit</b><p>Post a comment, request a change, edit the copy inline, or write a fresh rewrite. Nothing is overwritten without a record.</p></div>
-            <div class="how-step"><b>3 · Decide</b><p>Set each route and creative to Approved, Changes needed or Reject, then record your sign-off at the end.</p></div>
-          </div>
-        </div>
-
-        <div class="notice" style="margin-top:18px;border-left-color:var(--warn);background:var(--surface)">
-          <div class="notice-head">
-            <div class="notice-icon" aria-hidden="true">i</div>
-            <div>
-              <h3>One asset gap</h3>
-              <p>Routes 03 and 04 are Mushroom, Thyme &amp; Black Pepper ads, but the Image assets folder contains no mushroom 4:5 creative. The five supplied creatives cover Broccoli, Sweet Potato, Tomato, Beetroot and a testimonial. A mushroom asset is still needed if routes 03 and 04 run as static ads.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="copy">
-        <div class="section-head">
-          <p class="eyebrow">Section 02</p>
-          <h2 class="section-title">Copy routes</h2>
-          <p class="section-intro">Five routes, supplied as written. Use the tabs on each route to read the copy, leave comments, or save a rewrite. The suggested creative is a pairing recommendation, not a final media plan.</p>
-          <div class="section-meta">
-            <span class="count-chip"><b>5</b> routes</span>
-            <span class="count-chip"><b>4</b> headlines on route 03</span>
-            <span class="count-chip"><b>2</b> primary-text options on route 01</span>
-          </div>
-        </div>
-        <div class="routes" id="route-list"></div>
-      </section>
-
-      <section class="section" id="creatives">
-        <div class="section-head">
-          <p class="eyebrow">Section 03</p>
-          <h2 class="section-title">Creatives</h2>
-          <p class="section-intro">Five finished 4:5 assets, each in a flavour palette from the brand book. Open an image to inspect it, then mark the asset and leave a comment. Creative 03 carries the same digestive-health issue as copy route 02.</p>
-          <div class="section-meta">
-            <span class="count-chip"><b>5</b> assets</span>
-            <span class="count-chip"><b>4500 × 5625</b> source</span>
-            <span class="count-chip"><b>4:5</b> Meta feed</span>
-          </div>
-        </div>
-        <div class="creative-grid" id="creative-grid"></div>
-      </section>
-
-      <section class="section" id="compliance">
-        <div class="section-head">
-          <p class="eyebrow">Section 04</p>
-          <h2 class="section-title">Claim checks</h2>
-          <p class="section-intro">Every check below is tied to a route or creative. “High” means it should be resolved before launch. “Medium” needs substantiation or a wording change. “Low” is a style, evidence or asset note. This is a review tool, not legal advice; final claims still need the brand’s regulatory sign-off.</p>
-          <div class="section-meta">
-            <span class="count-chip"><b>6</b> high</span>
-            <span class="count-chip"><b>10</b> medium</span>
-            <span class="count-chip"><b>7</b> low</span>
-          </div>
-        </div>
-        <div class="filter-bar" id="flag-filters" role="group" aria-label="Filter claim checks">
-          <button class="filter-btn is-active" type="button" data-filter="all">All <span class="n">23</span></button>
-          <button class="filter-btn" type="button" data-filter="high">High <span class="n">6</span></button>
-          <button class="filter-btn" type="button" data-filter="medium">Medium <span class="n">10</span></button>
-          <button class="filter-btn" type="button" data-filter="low">Low <span class="n">7</span></button>
-        </div>
-        <div class="flags" id="flag-list"></div>
-
-        <div class="checks-passed">
-          <h3>What already holds up</h3>
-          <ul>
-            <li>Routes 03 and 04 use the corrected 2,000mg Lion’s Mane figure from Bella’s note.</li>
-            <li>Route 04 keeps the authorised vitamin B12 and vitamin D claims and avoids the mushroom award line.</li>
-            <li>No route names a competitor. The comparisons stay at category level.</li>
-            <li>All five creatives are 4:5 and use the brand book’s palette; the four product creatives use their flavour colours.</li>
-            <li>Route 01 keeps “up to 72% real veg” in the body copy, even though the headline still needs the “up to” qualifier.</li>
-            <li>The document uses Soul Soup Regular for display type and Roboto for body copy, matching the brand book’s digital fallback.</li>
-          </ul>
-        </div>
-
-        <div class="brand-notes">
-          <div class="brand-note">
-            <h3>Brand-book guardrails</h3>
-            <ul>
-              <li>Say “packed with up to 72% real veg”; answer “what’s the rest?” with herbs, spices and natural ingredients.</li>
-              <li>Never name a competitor.</li>
-              <li>Do not use “100% natural” claims.</li>
-              <li>Do not lead with “low” or “no” claims.</li>
-              <li>Do not overuse “instant” or “powdered”.</li>
-              <li>Headlines in Soul Soup; body copy in Roboto for digital.</li>
-            </ul>
-            <span class="source">Corporate identity document · pp6–7, 14–15</span>
-          </div>
-          <div class="brand-note">
-            <h3>Source files</h3>
-            <ul>
-              <li><b>Copy:</b> Soul Kitchen Ad Copy Relaunch campaign.md</li>
-              <li><b>Brand:</b> Corporate identity document.pdf</li>
-              <li><b>Claims:</b> Critical Marketing Notes From Bella.rtf</li>
-              <li><b>Creatives:</b> Image assets/SK_Meta_4x5_SK_Meta_4x5_1–5.jpg</li>
-              <li><b>Prepared:</b> 20 October 2026 · Draft 1</li>
-            </ul>
-            <span class="source">This is a review document. Nothing here is live.</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="sign-off">
-        <div class="section-head">
-          <p class="eyebrow">Section 05</p>
-          <h2 class="section-title">Sign-off</h2>
-          <p class="section-intro">Record the decision for the document as a whole. The sign-off appears as a stamp and is included in the exported record. Use “Approved with changes” when the route can proceed once the listed fixes are made. If you change a route after signing off, re-save the sign-off so the record reflects the latest version.</p>
-        </div>
-        <div class="signoff">
-          <div class="signoff-grid">
-            <div>
-              <h3 id="signoff-title">Record your decision</h3>
-              <p id="signoff-intro">This is the client-facing decision. It does not replace the per-route and per-creative statuses; it records the overall position.</p>
-              <form class="signoff-form" id="signoff-form">
-                <div class="form-grid">
-                  <div class="field">
-                    <label for="signoff-name">Name</label>
-                    <input class="input" id="signoff-name" name="name" autocomplete="name" required placeholder="Bella Acland">
-                  </div>
-                  <div class="field">
-                    <label for="signoff-role">Role</label>
-                    <input class="input" id="signoff-role" name="role" autocomplete="organization-title" placeholder="Founder, Soul Kitchen">
-                  </div>
-                  <div class="field span-2">
-                    <label for="signoff-decision">Decision</label>
-                    <select class="select" id="signoff-decision" name="decision" required>
-                      <option value="">Select a decision</option>
-                      <option value="approved">Approved</option>
-                      <option value="changes">Approved with changes</option>
-                      <option value="rejected">Not approved — revise and resubmit</option>
-                    </select>
-                  </div>
-                  <div class="field span-2">
-                    <label for="signoff-notes">Notes <span class="hint">(what must change, or what is approved)</span></label>
-                    <textarea class="textarea" id="signoff-notes" name="notes" placeholder="e.g. Routes 01 and 05 approved. Route 02 and creative 03 to remove all digestive-health language. Route 03 to remove Lion’s Mane function claims and the mushroom award line."></textarea>
-                  </div>
-                </div>
-                <div class="form-actions" style="justify-content:flex-start">
-                  <button class="btn btn-primary" type="submit">Save sign-off</button>
-                  <button class="btn" type="button" data-action="clear-signoff" id="clear-signoff">Clear sign-off</button>
-                </div>
-              </form>
-              <div class="signoff-actions">
-                <button class="btn" type="button" data-action="copy-summary">Copy approval summary</button>
-                <button class="btn" type="button" data-action="download-md">Download summary</button>
-                <button class="btn" type="button" data-action="download-json">Download record</button>
-              </div>
-            </div>
-            <div class="stamp-wrap" id="stamp-wrap">
-              <div class="stamp-empty" id="stamp-empty"><strong>No sign-off yet</strong>Once a decision is saved, it appears here and in the exported record.</div>
-              <div class="stamp" id="stamp" hidden>
-                <div class="stamp-top">Soul Kitchen · Relaunch approval</div>
-                <div class="stamp-decision" id="stamp-decision"></div>
-                <div class="stamp-name" id="stamp-name"></div>
-                <div class="stamp-meta" id="stamp-meta"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="activity">
-        <div class="section-head">
-          <p class="eyebrow">Section 06</p>
-          <h2 class="section-title">Activity</h2>
-          <p class="section-intro">A running record of comments, edits, rewrites, status changes and sign-off saved in this browser. Export the record to keep a copy.</p>
-        </div>
-        <div class="activity-list" id="activity-list"></div>
-      </section>
     </div>
-  </div>
+
+    <div class="creative-grid">
+      <figure class="creative">
+        <a class="creative-link" href="assets/creative-1.jpg" target="_blank" rel="noopener">
+          <img src="assets/creative-1.jpg" alt="Soul Kitchen Broccoli, Leek and Spinach soup pack on a Broth Green background with the headline The Real Soup Explosion." width="1120" height="1400">
+        </a>
+        <figcaption>
+          <span class="creative-kicker">Creative 01</span>
+          <strong>The Real Soup Explosion</strong>
+          <span class="flavour">Broccoli, Leek &amp; Spinach</span>
+          <a class="full-link" href="assets/creative-1.jpg" target="_blank" rel="noopener">Open full size ↗</a>
+        </figcaption>
+        <label class="tick"><input type="checkbox" data-creative="1"><span>Approve creative</span></label>
+      </figure>
+
+      <figure class="creative">
+        <a class="creative-link" href="assets/creative-2.jpg" target="_blank" rel="noopener">
+          <img src="assets/creative-2.jpg" alt="Soul Kitchen Curried Sweet Potato and Pumpkin soup pack with the headline Lasting Fuel For Your Afternoon and a Nourish Awards 2025 badge." width="1120" height="1400">
+        </a>
+        <figcaption>
+          <span class="creative-kicker">Creative 02</span>
+          <strong>Lasting Fuel For Your Afternoon</strong>
+          <span class="flavour">Sweet Potato &amp; Pumpkin</span>
+          <a class="full-link" href="assets/creative-2.jpg" target="_blank" rel="noopener">Open full size ↗</a>
+        </figcaption>
+        <label class="tick"><input type="checkbox" data-creative="2"><span>Approve creative</span></label>
+      </figure>
+
+      <figure class="creative">
+        <a class="creative-link" href="assets/creative-3-revised.jpg" target="_blank" rel="noopener">
+          <img src="assets/creative-3-revised.jpg" alt="Soul Kitchen Mexican Tomato and Red Pepper soup pack with the headline Real Veg. Real Comfort." width="1120" height="1400">
+        </a>
+        <figcaption>
+          <span class="creative-kicker">Creative 03 · revised</span>
+          <strong>Real Veg. Real Comfort.</strong>
+          <span class="flavour">Mexican Tomato &amp; Red Pepper</span>
+          <a class="full-link" href="assets/creative-3-revised.jpg" target="_blank" rel="noopener">Open full size ↗</a>
+        </figcaption>
+        <label class="tick"><input type="checkbox" data-creative="3"><span>Approve creative</span></label>
+      </figure>
+
+      <figure class="creative">
+        <a class="creative-link" href="assets/creative-4.jpg" target="_blank" rel="noopener">
+          <img src="assets/creative-4.jpg" alt="Soul Kitchen Beetroot and Coconut soup pack on a Golden Lentil background with beetroot imagery and the headline Real Whole-Food Nourishment." width="1120" height="1400">
+        </a>
+        <figcaption>
+          <span class="creative-kicker">Creative 04</span>
+          <strong>Real Whole-Food Nourishment</strong>
+          <span class="flavour">Beetroot &amp; Coconut</span>
+          <a class="full-link" href="assets/creative-4.jpg" target="_blank" rel="noopener">Open full size ↗</a>
+        </figcaption>
+        <label class="tick"><input type="checkbox" data-creative="4"><span>Approve creative</span></label>
+      </figure>
+
+      <figure class="creative">
+        <a class="creative-link" href="assets/creative-5.jpg" target="_blank" rel="noopener">
+          <img src="assets/creative-5.jpg" alt="Soul Kitchen customer testimonial creative on a Broth Green background quoting Paul Radford with five stars." width="1120" height="1400">
+        </a>
+        <figcaption>
+          <span class="creative-kicker">Creative 05</span>
+          <strong>All Flavours Are Beyond Delicious</strong>
+          <span class="flavour">Customer testimonial</span>
+          <a class="full-link" href="assets/creative-5.jpg" target="_blank" rel="noopener">Open full size ↗</a>
+        </figcaption>
+        <label class="tick"><input type="checkbox" data-creative="5"><span>Approve creative</span></label>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section wrap" id="copy">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <div>
+        <h2>The copy</h2>
+        <p>Tick what you approve, or add a copy change.</p>
+      </div>
+    </div>
+    <div class="copy-list">
+
+      <article class="copy-block" style="--accent:var(--broccoli)">
+        <div class="copy-main">
+          <div class="copy-head">
+            <span class="copy-num">01</span>
+            <div>
+              <p class="copy-kicker">Broccoli, Leek &amp; Spinach · comparison</p>
+              <h3 class="headline">🥕 As Little as 3% Veg vs. Up to 72% Real Veg.</h3>
+            </div>
+          </div>
+          <div class="copy-meta">
+            <span><b>Description:</b> Up to 72% real vegetables, herbs &amp; spices. Zero palm oil or fillers.</span>
+            <span><b>CTA:</b> Shop Now</span>
+          </div>
+          <p class="copy-label">Primary text · short version</p>
+          <div class="body">
+            <p>On the left: Palm oil, maltodextrin, emulsifiers, and as little as 3% veg.<br>On the right: up to 72% real whole vegetables, wild thyme, and Lion’s Mane mushroom.</p>
+            <p>Many instant soups are mostly starch and salt. Soul Kitchen is pure, dehydrated whole food that turns into a thick, comforting bowl in 60 seconds with hot water.</p>
+            <p>Real ingredients you can pronounce. Real food you can trust.<br>Claim your 5-Pack Discovery Box today.</p>
+          </div>
+          <details class="alt">
+            <summary>Full comparison version</summary>
+            <div class="body">
+              <p>Next time you’re in the supermarket aisle, flip over that familiar green packet of instant soup.<br>Look past the rustic front illustration. Read the small print.</p>
+              <p>Maltodextrin. Modified maize starch. Palm oil. Yeast extract. Artificial flavor enhancers. And right at the very bottom… barely 3% actual vegetable powder.</p>
+              <p>That isn’t soup. That’s salted, thickened starch water.</p>
+              <p>We built Soul Kitchen to end that compromise.</p>
+              <p>Packed with up to 72% real dehydrated vegetables, wild herbs, and functional plant nutrition. Just add boiling water, stir, and in 60 seconds you have a rich, velvety gourmet soup that actually nourishes your body.</p>
+              <p class="benefits">✓ Up to 72% real whole vegetables<br>✓ 1 of your recommended 5-a-day<br>✓ 100% Plant-powered, vegan &amp; gluten-free<br>✓ Zero palm oil, gums, fillers, or added sugar<br>✓ As seen on BBC Dragons' Den &amp; Nourish Awards Winner 2024 &amp; 2025</p>
+              <p>Stop settling for industrial fillers. Taste what real food feels like.</p>
+              <p>Try the 5-Flavour Starter Discovery Box today with 15% off using code SOUP15 at checkout. Free UK delivery included.</p>
+            </div>
+          </details>
+        </div>
+        <aside class="approval">
+          <p class="approval-title">Your call</p>
+          <label class="tick"><input type="checkbox" data-copy="1"><span>Approve copy</span></label>
+          <label class="tick"><input type="checkbox" data-change-toggle="1"><span>Copy change</span></label>
+          <div class="change" data-change-box="1" hidden><textarea data-change-text="1" aria-label="Copy change for route 01 — 3% vs 72%" placeholder="What should change?"></textarea></div>
+        </aside>
+      </article>
+
+      <article class="copy-block" style="--accent:var(--tomato)">
+        <div class="copy-main">
+          <div class="copy-head">
+            <span class="copy-num">02</span>
+            <div>
+              <p class="copy-kicker">Mexican Tomato &amp; Red Pepper · everyday lunch</p>
+              <h3 class="headline">A quick lunch you can feel good about.</h3>
+            </div>
+          </div>
+          <div class="copy-meta">
+            <span><b>Description:</b> Plant-powered, gluten-free and made without gums. Ready in 60 seconds.</span>
+            <span><b>CTA:</b> Shop Now</span>
+          </div>
+          <p class="copy-label">Primary text</p>
+          <div class="body">
+            <p>Finding a quick lunch that’s genuinely satisfying can feel like a minefield, with long ingredient lists and things you can’t pronounce.</p>
+            <p>Soul Kitchen was made on one simple rule: convenience, without compromise.</p>
+            <p>We gently dehydrate real vegetables, herbs and functional ingredients to keep their nutrition and deliver big, bold flavour, without artificial flavours.</p>
+            <p class="benefits">✓ No palm oil<br>✓ No gums or emulsifiers<br>✓ Gluten-free, dairy-free and plant-powered<br>✓ Under 100 calories per bowl</p>
+            <p>Real food that’s comforting, flavourful and ready in 60 seconds with just hot water.</p>
+            <p>Try our Discovery Box today with code SOUP15.</p>
+          </div>
+        </div>
+        <aside class="approval">
+          <p class="approval-title">Your call</p>
+          <label class="tick"><input type="checkbox" data-copy="2"><span>Approve copy</span></label>
+          <label class="tick"><input type="checkbox" data-change-toggle="2"><span>Copy change</span></label>
+          <div class="change" data-change-box="2" hidden><textarea data-change-text="2" aria-label="Copy change for route 02 — Everyday lunch" placeholder="What should change?"></textarea></div>
+        </aside>
+      </article>
+
+      <article class="copy-block" style="--accent:var(--mushroom)">
+        <div class="copy-main">
+          <div class="copy-head">
+            <span class="copy-num">03</span>
+            <div>
+              <p class="copy-kicker">Mushroom, Thyme &amp; Black Pepper · Lion’s Mane + B12</p>
+              <h3 class="headline">Mushroom, Thyme &amp; Black Pepper soup with Lion’s Mane for focus and clarity</h3>
+            </div>
+          </div>
+          <div class="copy-meta">
+            <span><b>Description:</b> Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.</span>
+            <span><b>CTA:</b> Shop Now</span>
+          </div>
+          <p class="copy-label">Primary text</p>
+          <div class="body">
+            <p>Mushroom, Thyme &amp; Black Pepper: rich, earthy and naturally creamy. 🍄</p>
+            <p>Soul Kitchen’s award-winning Mushroom &amp; Thyme is built differently.</p>
+            <p>Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.</p>
+            <p>Lion’s Mane mushroom 🍄‍🟫is the revered functional mushroom celebrated for supporting mental focus, memory clarity, and cognitive resilience. ✨</p>
+            <p>It’s also naturally boosted with vitamins B12 and D by BIOVIT, delivering 100% of your daily Nutrient Reference Value (NRV) of vitamin B12 and 15% of your NRV of vitamin D.</p>
+            <p>Real roasted button mushrooms, wild garden thyme, cracked black pepper, it’s a warming midday ritual that actively supports your mind and body.</p>
+            <p class="benefits">✓ 2,000mg Lion’s Mane mushroom equivalent<br>✓ 100% NRV of vitamin B12, plus vitamin D<br>✓ Vegan, gluten-free and dairy-free<br>✓ Under 100 calories</p>
+            <p>Just add hot water and enjoy.</p>
+            <p>Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.</p>
+            <p>Winner of the prestigious Nourish Awards 2024 &amp; 2025.</p>
+            <p>Shop Now</p>
+          </div>
+          <details class="alt">
+            <summary>Other headline options</summary>
+            <div class="body">
+              <p>100% of your daily B12, plus vitamin D, in a rich and earthy bowl</p>
+              <p>The soup that works as hard as your supplements—with Lion’s Mane and 100% of your B12</p>
+              <p>Lion’s Mane and 100% of your B12, in a soup that works as hard as your daily supplements</p>
+            </div>
+          </details>
+        </div>
+        <aside class="approval">
+          <p class="approval-title">Your call</p>
+          <label class="tick"><input type="checkbox" data-copy="3"><span>Approve copy</span></label>
+          <label class="tick"><input type="checkbox" data-change-toggle="3"><span>Copy change</span></label>
+          <div class="change" data-change-box="3" hidden><textarea data-change-text="3" aria-label="Copy change for route 03 — Lion’s Mane + B12" placeholder="What should change?"></textarea></div>
+        </aside>
+      </article>
+
+      <article class="copy-block" style="--accent:var(--mushroom)">
+        <div class="copy-main">
+          <div class="copy-head">
+            <span class="copy-num">04</span>
+            <div>
+              <p class="copy-kicker">Mushroom, Thyme &amp; Black Pepper · short cut</p>
+              <h3 class="headline">Lion’s Mane and 100% of your B12, in one bowl</h3>
+            </div>
+          </div>
+          <div class="copy-meta">
+            <span><b>Description:</b> Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.</span>
+            <span><b>CTA:</b> Shop Now</span>
+          </div>
+          <p class="copy-label">Primary text</p>
+          <div class="body">
+            <p>Mushroom, Thyme &amp; Black Pepper: rich, earthy and naturally creamy. 🍄</p>
+            <p>Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.</p>
+            <p>It’s also naturally boosted with vitamins B12 and D by BIOVIT, delivering 100% of your daily Nutrient Reference Value (NRV) of vitamin B12 and 15% of your NRV of vitamin D.</p>
+            <p>Vitamin B12 contributes to normal energy-yielding metabolism and to normal psychological function. Vitamin D contributes to the normal function of the immune system.</p>
+            <p class="benefits">✓ 2,000mg Lion’s Mane mushroom equivalent<br>✓ 100% NRV of vitamin B12, plus vitamin D<br>✓ Vegan, gluten-free and dairy-free<br>✓ Under 100 calories</p>
+            <p>Just add hot water and enjoy.<br>Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.</p>
+          </div>
+        </div>
+        <aside class="approval">
+          <p class="approval-title">Your call</p>
+          <label class="tick"><input type="checkbox" data-copy="4"><span>Approve copy</span></label>
+          <label class="tick"><input type="checkbox" data-change-toggle="4"><span>Copy change</span></label>
+          <div class="change" data-change-box="4" hidden><textarea data-change-text="4" aria-label="Copy change for route 04 — Lion’s Mane + B12 short" placeholder="What should change?"></textarea></div>
+        </aside>
+      </article>
+
+      <article class="copy-block" style="--accent:var(--beetroot)">
+        <div class="copy-main">
+          <div class="copy-head">
+            <span class="copy-num">05</span>
+            <div>
+              <p class="copy-kicker">Customer testimonial · convenience without compromise</p>
+              <h3 class="headline">Lunch shouldn’t be a gamble. 🛒</h3>
+            </div>
+          </div>
+          <div class="copy-meta">
+            <span><b>Description:</b> not supplied</span>
+            <span><b>CTA:</b> not supplied</span>
+          </div>
+          <p class="copy-label">Primary text</p>
+          <div class="body">
+            <p>A quick lunch that’s actually good can feel like a minefield, with long ingredient lists and things you can’t pronounce.</p>
+            <p>Soul Kitchen was made on one simple rule: convenience, without compromise✨<br>We champion real, gently dehydrated whole vegetables, superfoods and functional ingredients, to keep their nutrition and deliver big, bold, delicious flavour, never relying on artificial flavours.🌱</p>
+            <p class="benefits">✓ Zero palm oil<br>✓ Zero gums or emulsifiers<br>✓ 100% gluten-free, dairy-free and plant-powered<br>✓ Under 100 calories per satisfying, velvety bowl 🥣</p>
+            <p>Real food that’s comforting, flavourful and ready in minutes with just hot water. 💚<br>Try our Discovery Box today with code SOUP15.</p>
+          </div>
+        </div>
+        <aside class="approval">
+          <p class="approval-title">Your call</p>
+          <label class="tick"><input type="checkbox" data-copy="5"><span>Approve copy</span></label>
+          <label class="tick"><input type="checkbox" data-change-toggle="5"><span>Copy change</span></label>
+          <div class="change" data-change-box="5" hidden><textarea data-change-text="5" aria-label="Copy change for route 05 — Convenience without compromise" placeholder="What should change?"></textarea></div>
+        </aside>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="finish wrap" id="send">
+    <p class="eyebrow">03 · Send</p>
+    <h2>Send your approval</h2>
+    <p class="finish-lede">Your ticks and changes save in this browser. Copy the note and send it to us on WhatsApp.</p>
+    <div class="finish-fields">
+      <div class="field">
+        <label for="reviewer-name">Your name</label>
+        <input id="reviewer-name" name="reviewer-name" autocomplete="name" placeholder="Bella Acland">
+      </div>
+      <div class="field">
+        <label for="overall">Anything else? <span class="muted">(creative changes, questions)</span></label>
+        <textarea id="overall" name="overall" placeholder="Optional"></textarea>
+      </div>
+    </div>
+    <div class="finish-actions">
+      <button class="btn btn-primary" id="copy-note" type="button">Copy for WhatsApp</button>
+      <button class="btn" id="download-note" type="button">Download .txt</button>
+      <button class="link-btn" id="reset" type="button">Reset</button>
+    </div>
+    <p class="status" id="status">0 of 5 creatives approved · 0 of 5 copy routes approved · 0 copy changes</p>
+    <p class="storage-note" id="storage-note" hidden>Saving is unavailable in this browser. Copy the note before closing.</p>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <h3>Made with Soul</h3>
-      <p>Relaunch campaign approval document. Prepared for Bella Acland, Soul Kitchen. This page is a review tool, not a live ad. Claims still need the brand’s regulatory sign-off.</p>
-      <div class="rule"></div>
-      <p><b>Design:</b> Broth Green, Electric Pea Green and Golden Lentil from the Soul Kitchen brand book. Display type: Soul Soup Regular. Body: Roboto.</p>
-    </div>
-    <div>
-      <h3>Document sources</h3>
-      <ul>
-        <li><b>Copy:</b> Soul Kitchen Ad Copy Relaunch campaign.md</li>
-        <li><b>Brand:</b> Corporate identity document.pdf</li>
-        <li><b>Claims:</b> Critical Marketing Notes From Bella.rtf</li>
-        <li><b>Creatives:</b> Image assets · 4500 × 5625 · 4:5</li>
-        <li><b>Version:</b> Draft 1 · 20 October 2026</li>
-      </ul>
-    </div>
-  </div>
+<footer class="footer wrap">
+  <span>Soul Kitchen · Relaunch copy &amp; creative approval</span>
+  <span>20 October 2026 · Draft 1</span>
 </footer>
-
-<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Creative preview">
-  <div class="lightbox-stage">
-    <button class="lightbox-close" type="button" data-action="lightbox-close" aria-label="Close preview">×</button>
-    <button class="lightbox-nav lightbox-prev" type="button" data-action="lightbox-prev" aria-label="Previous creative">‹</button>
-    <img id="lightbox-img" alt="Creative preview">
-    <button class="lightbox-nav lightbox-next" type="button" data-action="lightbox-next" aria-label="Next creative">›</button>
-  </div>
-  <div class="lightbox-caption" id="lightbox-caption"></div>
-</div>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-/* ============================================================
-   DATA
-   ============================================================ */
-const BRAND = {
-  tomato: "#CB333B",
-  pumpkin: "#E35205",
-  beetroot: "#A20067",
-  broccoli: "#678338",
-  mushroom: "#C7A984",
-  pea: "#76B043",
-  broth: "#184121"
+const STORAGE_KEY = "sk-simple-approval-v1";
+const THEME_KEY = "sk-simple-approval-theme";
+const CREATIVE_NAMES = {
+  1: "The Real Soup Explosion",
+  2: "Lasting Fuel For Your Afternoon",
+  3: "Real Veg. Real Comfort.",
+  4: "Real Whole-Food Nourishment",
+  5: "All Flavours Are Beyond Delicious"
+};
+const CREATIVE_FLAVOURS = {
+  1: "Broccoli, Leek & Spinach",
+  2: "Sweet Potato & Pumpkin",
+  3: "Mexican Tomato & Red Pepper",
+  4: "Beetroot & Coconut",
+  5: "Customer testimonial"
+};
+const COPY_NAMES = {
+  1: "3% vs 72%",
+  2: "Everyday lunch",
+  3: "Lion’s Mane + B12",
+  4: "Lion’s Mane + B12, short",
+  5: "Convenience without compromise"
 };
 
-const VARIANTS = [
-  {
-    id: "v1",
-    num: "01",
-    name: "4% vs 72%",
-    angle: "Comparison and proof",
-    audience: "Clean-label switchers",
-    accent: BRAND.broccoli,
-    accentInk: "#FFFDE9",
-    suggestedCreative: "c1",
-    premise: "A direct ingredient comparison between supermarket cup soup and Soul Kitchen’s real-veg density.",
-    headlines: [
-      { label: "Headline", text: "🥕 4% Vegetables vs. 72% Real Vegetables." }
-    ],
-    bodies: [
-      {
-        label: "Primary text — option 1 (full comparison)",
-        text: `Next time you’re in the supermarket aisle, flip over that familiar green packet of instant soup.
-Look past the rustic front illustration. Read the small print.
-
-Maltodextrin. Modified maize starch. Palm oil. Yeast extract. Artificial flavor enhancers. And right at the very bottom… barely 4% actual vegetable powder.
-
-That isn’t soup. That’s salted, thickened starch water.
-
-We built Soul Kitchen to end that compromise.
-
-Every single bowl is packed with up to 72% real dehydrated vegetables, wild herbs, and functional plant nutrition. Just add boiling water, stir, and in 60 seconds you have a rich, velvety gourmet soup that actually nourishes your body.
-
-✓ Up to 72% real whole vegetables
-✓ 1 of your recommended 5-a-day
-✓ 100% Plant-powered, vegan & gluten-free
-✓ Zero palm oil, gums, fillers, or added sugar
-✓ As seen on BBC Dragons' Den & Nourish Awards Winner 2024 & 2025
-
-Stop settling for industrial fillers. Taste what real food feels like.
-
-Try the 5-Flavour Starter Discovery Box today with 15% off using code SOUP15 at checkout. Free UK delivery included.`
-      },
-      {
-        label: "Primary text — option 2 (short-form punchy)",
-        text: `On the left: Palm oil, maltodextrin, emulsifiers, and less than 4% veg.
-On the right: 72% real whole vegetables, wild thyme, and Lion’s Mane mushroom.
-
-Most instant soups are 90% starch and salt. Soul Kitchen is pure, dehydrated whole food that turns into a thick, comforting bowl in 60 seconds with hot water.
-
-Real ingredients you can pronounce. Real food you can trust.
-Claim your 5-Pack Discovery Box today.`
-      }
-    ],
-    description: "Up to 72% real vegetables, herbs & spices. Zero palm oil or fillers.",
-    cta: "Shop Now",
-    flags: ["h4", "h5", "m4", "m5", "m6", "m10", "l2", "l3", "l6"],
-    suggested: {
-      headline: "As little as 3% veg vs. up to 72% real veg.",
-      body: `Next time you’re in the supermarket aisle, turn over the packet and read the small print.
-
-Many cup soups contain as little as 3% vegetable powder, alongside maltodextrin, modified starch and palm oil. Soul Kitchen is different: packed with up to 72% real veg, herbs and spices, with no palm oil, gums or artificial flavours.
-
-Just add hot water and in 60 seconds you have a rich, comforting bowl.
-
-✓ Up to 72% real veg
-✓ 1 of your 5-a-day
-✓ Vegan and gluten-free
-✓ No palm oil, gums or added sugar
-
-Try the 5-Flavour Discovery Box with 15% off using code SOUP15. Free UK delivery.`,
-      description: "Up to 72% real vegetables, herbs & spices. No palm oil, gums or artificial flavours.",
-      cta: "Shop Now",
-      note: "Uses the brand book’s approved “as little as 3%” comparison rather than the unsourced 4%. Removes “every single bowl” and the competitor attack. Award and Dragons’ Den lines are left out until flavour-specific substantiation is confirmed."
-    }
-  },
-  {
-    id: "v2",
-    num: "02",
-    name: "Digestive system",
-    angle: "Gut comfort",
-    audience: "People with sensitive digestion",
-    accent: BRAND.tomato,
-    accentInk: "#FFFDE9",
-    suggestedCreative: "c3",
-    premise: "A digestive-comfort angle built around the absence of gums, emulsifiers and palm oil.",
-    headlines: [
-      { label: "Headline", text: "Finally An instant soup your digestive system will thank you for. 🌿🍲" }
-    ],
-    bodies: [
-      {
-        label: "Primary text",
-        text: `If you struggle with bloating, digestive sluggishness, or food sensitivities, finding a quick, healthy lunch can be an absolute minefield. 🛒
-
-Supermarket “fresh” soups often hide modified starches, dairy thickeners, seed oils, and artificial stabilizers that wreak havoc on sensitive stomachs. 🤢
-
-Soul Kitchen was formulated from the ground up on one uncompromising rule: 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥. 𝐄𝐯𝐞𝐫. ✨🏅
-
-We gently dehydrate whole vegetables, cold-pressed herbs, and functional plant ingredients at low temperatures to keep their natural cellular structure, fibers, and micronutrients intact. 🌱
-
-✓ Zero palm oil (no inflammatory industrial oils)
-
-✓ Zero xanthan gum, guar gum, or artificial emulsifiers
-
-✓ 100% Gluten-free, dairy-free, and plant-powered
-
-✓ Natural whole-food fiber that supports a calm, balanced gut microbiome
-
-✓ Under 100 calories per satisfying, velvety bowl 🥣
-
-Experience the clean, comforting lift of real whole food. 💚 No heavy post-lunch slump. No uncomfortable bloat. Just pure plant energy. 🌿
-
-Discover your new favourite clean pantry staple. Try our 5-Flavour Discovery Box today with code SOUP15.`
-      }
-    ],
-    description: "100% plant-powered, gluten-free & zero gums. Easy on digestion, ready in 60s.",
-    cta: "Shop Now",
-    flags: ["h3", "m10", "l1", "l2", "l3", "l7"],
-    suggested: {
-      headline: "A quick lunch you can feel good about.",
-      body: `Finding a quick lunch that’s genuinely satisfying can feel like a minefield, with long ingredient lists and things you can’t pronounce.
-
-Soul Kitchen was made on one simple rule: convenience, without compromise.
-
-We gently dehydrate real vegetables, herbs and functional ingredients to keep their nutrition and deliver big, bold flavour, without artificial flavours.
-
-✓ No palm oil
-✓ No gums or emulsifiers
-✓ Gluten-free, dairy-free and plant-powered
-✓ Under 100 calories per bowl
-
-Real food that’s comforting, flavourful and ready in 60 seconds with just hot water.
-
-Try our Discovery Box today with code SOUP15.`,
-      description: "Plant-powered, gluten-free and made without gums. Ready in 60 seconds.",
-      cta: "Shop Now",
-      note: "Removes every digestive-health claim, including “wreak havoc”, “gut microbiome”, “bloat”, “post-lunch slump” and “easy on digestion”. Replaces them with taste, convenience and verified formulation facts."
-    }
-  },
-  {
-    id: "v3",
-    num: "03",
-    name: "Lion’s Mane + B12",
-    angle: "Functional mushroom",
-    audience: "Supplement-curious buyers",
-    accent: BRAND.mushroom,
-    accentInk: "#2A2418",
-    suggestedCreative: null,
-    premise: "A functional-mushroom route with four headline options. This is the highest-risk route in the document.",
-    headlines: [
-      { label: "Headline 1", text: "Mushroom, Thyme & Black Pepper soup with Lion’s Mane for focus and clarity" },
-      { label: "Headline 2", text: "100% of your daily B12, plus vitamin D, in a rich and earthy bowl" },
-      { label: "Headline 3", text: "The soup that works as hard as your supplements—with Lion’s Mane and 100% of your B12" },
-      { label: "Headline 4", text: "Lion’s Mane and 100% of your B12, in a soup that works as hard as your daily supplements" }
-    ],
-    bodies: [
-      {
-        label: "Primary text",
-        text: `Mushroom, Thyme & Black Pepper: rich, earthy and naturally creamy. 🍄
-
-Soul Kitchen’s award-winning Mushroom & Thyme is built differently.
-
-Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.
-
-Lion’s Mane mushroom 🍄‍🟫is the revered functional mushroom celebrated for supporting mental focus, memory clarity, and cognitive resilience. ✨
-
-It’s also naturally boosted with vitamins B12 and D by BIOVIT, delivering 100% of your daily Nutrient Reference Value (NRV) of vitamin B12 and 15% of your NRV of vitamin D.
-
-Real roasted button mushrooms, wild garden thyme, cracked black pepper, it’s a warming midday ritual that actively supports your mind and body.
-
-
-✓ 2,000mg Lion’s Mane mushroom equivalent
-✓ 100% NRV of vitamin B12, plus vitamin D
-✓ Vegan, gluten-free and dairy-free
-✓ Under 100 calories
-
-Just add hot water and enjoy.
-
-Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.
-
-Winner of the prestigious Nourish Awards 2024 & 2025.
-
-Shop Now`
-      }
-    ],
-    description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
-    cta: "Shop Now",
-    flags: ["h1", "h2", "m1", "m2", "m10", "l3", "l6"],
-    suggested: {
-      headline: "Mushroom, Thyme & Black Pepper, with Lion’s Mane and 100% NRV B12",
-      body: `Mushroom, Thyme & Black Pepper: rich, earthy and naturally creamy. 🍄
-
-Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.
-
-It’s boosted with organic vitamin B12 and vitamin D from shiitake mushroom, delivering 100% of your daily NRV of vitamin B12 and 15% of your NRV of vitamin D.
-
-Vitamin B12 contributes to normal energy-yielding metabolism and to normal psychological function. Vitamin D contributes to the normal function of the immune system.
-
-✓ 2,000mg Lion’s Mane mushroom equivalent
-✓ 100% NRV of vitamin B12, plus vitamin D
-✓ Vegan, gluten-free and dairy-free
-✓ Under 100 calories
-
-Just add hot water and enjoy.
-
-Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.`,
-      description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
-      cta: "Shop Now",
-      note: "Removes all cognitive-function claims and the Mushroom Nourish Award line. Keeps the 2,000mg figure Bella confirmed and the authorised B12/D wording. The B12/D source is described as organic shiitake extract, per Bella’s note, rather than BIOVIT."
-    }
-  },
-  {
-    id: "v4",
-    num: "04",
-    name: "Lion’s Mane + B12, short",
-    angle: "Functional mushroom, compliant cut",
-    audience: "Supplement-curious buyers",
-    accent: BRAND.mushroom,
-    accentInk: "#2A2418",
-    suggestedCreative: null,
-    premise: "A shorter, more careful version of the functional-mushroom route, including authorised B12 and D claims.",
-    headlines: [
-      { label: "Headline", text: "Lion’s Mane and 100% of your B12, in one bowl" }
-    ],
-    bodies: [
-      {
-        label: "Primary text",
-        text: `Mushroom, Thyme & Black Pepper: rich, earthy and naturally creamy. 🍄
-
-Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.
-
-It’s also naturally boosted with vitamins B12 and D by BIOVIT, delivering 100% of your daily Nutrient Reference Value (NRV) of vitamin B12 and 15% of your NRV of vitamin D.
-
-Vitamin B12 contributes to normal energy-yielding metabolism and to normal psychological function. Vitamin D contributes to the normal function of the immune system.
-
-✓ 2,000mg Lion’s Mane mushroom equivalent
-✓ 100% NRV of vitamin B12, plus vitamin D
-✓ Vegan, gluten-free and dairy-free
-✓ Under 100 calories
-
-Just add hot water and enjoy.
-Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.`
-      }
-    ],
-    description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
-    cta: "Shop Now",
-    flags: ["m1", "m3", "m10", "l3", "l6"],
-    suggested: {
-      headline: "Lion’s Mane plus 100% NRV B12, in one bowl",
-      body: `Mushroom, Thyme & Black Pepper: rich, earthy and naturally creamy. 🍄
-
-Every bowl contains Lion’s Mane mushroom extract, equivalent to 2,000mg of Lion’s Mane mushroom, alongside real mushroom, thyme and black pepper.
-
-It’s boosted with organic vitamin B12 and vitamin D from shiitake mushroom, delivering 100% of your daily NRV of vitamin B12 and 15% of your NRV of vitamin D.
-
-Vitamin B12 contributes to normal energy-yielding metabolism and to normal psychological function. Vitamin D contributes to the normal function of the immune system.
-
-✓ 2,000mg Lion’s Mane mushroom equivalent
-✓ 100% NRV of vitamin B12, plus vitamin D
-✓ Vegan, gluten-free and dairy-free
-✓ Under 100 calories
-
-Just add hot water and enjoy.
-Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.`,
-      description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
-      cta: "Shop Now",
-      note: "Keeps route 04’s authorised claims and removes the implied link between Lion’s Mane and B12. “Plus” replaces “and” in the headline so B12 is not attributed to the mushroom."
-    }
-  },
-  {
-    id: "v5",
-    num: "05",
-    name: "Convenience without compromise",
-    angle: "Softer everyday lunch",
-    audience: "Busy, health-conscious lunchers",
-    accent: BRAND.beetroot,
-    accentInk: "#FFFDE9",
-    suggestedCreative: "c5",
-    premise: "A softer, everyday route that leads with taste and convenience rather than a direct attack on the category.",
-    headlines: [],
-    bodies: [
-      {
-        label: "Primary text",
-        text: `I'd prefer something closer to this, let me know!
-
-Lunch shouldn’t be a gamble. 🛒
-A quick lunch that’s actually good can feel like a minefield, with long ingredient lists and things you can’t pronounce.
-
-Soul Kitchen was made on one simple rule: convenience, without compromise✨
-We champion real, gently dehydrated whole vegetables, superfoods and functional ingredients, to keep their nutrition and deliver big, bold, delicious flavour, never relying on artificial flavours.🌱
-
-✓ Zero palm oil
-✓ Zero gums or emulsifiers
-✓ 100% gluten-free, dairy-free and plant-powered
-✓ Under 100 calories per satisfying, velvety bowl 🥣
-
-Real food that’s comforting, flavourful and ready in minutes with just hot water. 💚
-Try our Discovery Box today with code SOUP15.`
-      }
-    ],
-    description: "",
-    cta: "",
-    flags: ["m9", "m10", "l1", "l2", "l3", "l6"],
-    suggested: {
-      headline: "Lunch shouldn’t be a gamble.",
-      body: `A quick lunch that’s actually good can feel like a minefield, with long ingredient lists and things you can’t pronounce.
-
-Soul Kitchen was made on one simple rule: convenience, without compromise.
-
-We champion real, gently dehydrated vegetables, superfoods and functional ingredients, to keep their nutrition and deliver big, bold flavour, without artificial flavours.
-
-✓ No palm oil
-✓ No gums or emulsifiers
-✓ Gluten-free, dairy-free and plant-powered
-✓ Under 100 calories per bowl
-
-Real food that’s comforting, flavourful and ready in minutes with just hot water.
-
-Try our Discovery Box today with code SOUP15.`,
-      description: "Real vegetables, herbs and spices. No palm oil, gums or artificial flavours. Ready in 60 seconds.",
-      cta: "Shop Now",
-      note: "Completes the route with the missing headline, description and CTA. Removes the internal note from the production copy and changes “whole vegetables” to “vegetables” to stay clear of the 100% whole-vegetable territory."
-    }
-  }
-];
-
-const CREATIVES = [
-  {
-    id: "c1",
-    num: "01",
-    title: "The Real Soup Explosion",
-    flavour: "Broccoli, Leek & Spinach",
-    accent: BRAND.broccoli,
-    file: "assets/creative-1.jpg",
-    alt: "Soul Kitchen Broccoli, Leek and Spinach soup pack on a Broth Green background with the headline The Real Soup Explosion.",
-    angle: "Product hero / real-veg proof",
-    note: "Uses the Broccoli, Leek & Spinach flavour colour and a packet hero. The 4:5 crop is consistent with the set. The on-pack “High in Protein” claim is visible and needs substantiation.",
-    flags: ["l4"]
-  },
-  {
-    id: "c2",
-    num: "02",
-    title: "Lasting Fuel For Your Afternoon",
-    flavour: "Sweet Potato & Pumpkin",
-    accent: BRAND.pumpkin,
-    file: "assets/creative-2.jpg",
-    alt: "Soul Kitchen Curried Sweet Potato and Pumpkin soup pack with the headline Lasting Fuel For Your Afternoon and a Nourish Awards 2025 badge.",
-    angle: "Afternoon energy",
-    note: "Warm Sweet Potato & Pumpkin palette and a clear Nourish Awards badge. “Lasting fuel” implies sustained energy and needs substantiation or a softer line.",
-    flags: ["m8"]
-  },
-  {
-    id: "c3",
-    num: "03",
-    title: "Your Digestive System Will Thank You",
-    flavour: "Mexican Tomato & Red Pepper",
-    accent: BRAND.tomato,
-    file: "assets/creative-3.jpg",
-    alt: "Soul Kitchen Mexican Tomato and Red Pepper soup pack on a tomato-red background with the headline Your Digestive System Will Thank You.",
-    angle: "Digestive comfort",
-    note: "Strong Tomato & Red Pepper palette and a direct digestive-health headline. This carries the same claim problem as copy route 02.",
-    flags: ["h6", "l5"]
-  },
-  {
-    id: "c4",
-    num: "04",
-    title: "Real Whole-Food Nourishment",
-    flavour: "Beetroot & Coconut",
-    accent: BRAND.beetroot,
-    file: "assets/creative-4.jpg",
-    alt: "Soul Kitchen Beetroot and Coconut soup pack on a Golden Lentil background with beetroot imagery and the headline Real Whole-Food Nourishment.",
-    angle: "Real-food proof",
-    note: "Beetroot & Coconut palette with whole beetroot imagery. “Real whole-food nourishment” is the safest headline in the set; it is a strong alternative for route 01 if you want to lead with whole-food proof.",
-    flags: []
-  },
-  {
-    id: "c5",
-    num: "05",
-    title: "All Flavours Are Beyond Delicious",
-    flavour: "Customer testimonial",
-    accent: BRAND.pea,
-    file: "assets/creative-5.jpg",
-    alt: "Soul Kitchen customer testimonial creative on a Broth Green background quoting Paul Radford with five stars.",
-    angle: "Social proof",
-    note: "Broth Green testimonial with a five-star review. The quote, the customer name and the star rating all need a release and verification before paid use.",
-    flags: ["m7"]
-  }
-];
-
-const FLAGS = [
-  {
-    id: "h1", severity: "high", target: "v3", scope: "Copy route 03",
-    title: "Lion’s Mane is given functional claims",
-    why: "Bella’s note is explicit: you can never claim Lion’s Mane delivers any function. This route promises focus, memory clarity and cognitive resilience, and two headlines compare the soup to supplements.",
-    lines: [
-      "Headline 1: “Mushroom, Thyme & Black Pepper soup with Lion’s Mane for focus and clarity”",
-      "Body: “Lion’s Mane mushroom … celebrated for supporting mental focus, memory clarity, and cognitive resilience.”",
-      "Headlines 3 and 4: “works as hard as your supplements”",
-      "Body: “a warming midday ritual that actively supports your mind and body”"
-    ],
-    action: "Remove every cognitive or functional claim. Keep Lion’s Mane as an ingredient name and let the authorised B12 and D claims carry the benefit. Use the agency draft in the Rewrite tab as a starting point."
-  },
-  {
-    id: "h2", severity: "high", target: "v3", scope: "Copy route 03",
-    title: "Mushroom is given a Nourish Award it does not have",
-    why: "Bella’s note says the mushroom flavour does not have a Nourish Award. Route 03 calls Mushroom & Thyme “award-winning” and closes with “Winner of the prestigious Nourish Awards 2024 & 2025”.",
-    lines: [
-      "“Soul Kitchen’s award-winning Mushroom & Thyme is built differently.”",
-      "“Winner of the prestigious Nourish Awards 2024 & 2025.”"
-    ],
-    action: "Remove both lines from the mushroom route. Only use the Nourish Awards line on the flavours that actually won, with the correct year and category."
-  },
-  {
-    id: "h3", severity: "high", target: "v2", scope: "Copy route 02",
-    title: "Digestive-health claims run through the whole route",
-    why: "The headline, body and description all promise a digestive benefit. These are implied health claims, and the competitor line goes further by saying other soups “wreak havoc on sensitive stomachs”. “Inflammatory industrial oils” is also an implied health claim.",
-    lines: [
-      "Headline: “Finally An instant soup your digestive system will thank you for.”",
-      "“Supermarket ‘fresh’ soups often hide … that wreak havoc on sensitive stomachs.”",
-      "“Natural whole-food fiber that supports a calm, balanced gut microbiome”",
-      "“Zero palm oil (no inflammatory industrial oils)”",
-      "“No heavy post-lunch slump. No uncomfortable bloat.”",
-      "Description: “Easy on digestion, ready in 60s.”"
-    ],
-    action: "Remove the digestive-health framing entirely. Replace it with taste, convenience and verified formulation facts: real veg, no gums or emulsifiers, gluten-free, under 100 calories. See the agency draft in the Rewrite tab."
-  },
-  {
-    id: "h4", severity: "high", target: "v1", scope: "Copy route 01",
-    title: "The 4% and 90% comparisons are unsourced",
-    why: "The headline uses a 4% competitor figure and option 2 says “Most instant soups are 90% starch and salt”. The brand book allows “many cup soups contain as little as 3% veg”, never names a brand, and asks for substantiation. A hard number in a headline needs a source and a date.",
-    lines: [
-      "Headline: “🥕 4% Vegetables vs. 72% Real Vegetables.”",
-      "“barely 4% actual vegetable powder”",
-      "Option 2: “less than 4% veg”",
-      "Option 2: “Most instant soups are 90% starch and salt.”"
-    ],
-    action: "Either supply the source and date for 4% and 90%, or use the brand-book-approved “as little as 3% veg”. Keep the comparison at category level and never name a competitor. Add “up to” before 72%."
-  },
-  {
-    id: "h5", severity: "high", target: "v1", scope: "Copy route 01",
-    title: "“Every single bowl” turns “up to 72%” into a flat claim",
-    why: "The body says every single bowl is packed with up to 72% real vegetables, and option 2 says “72% real whole vegetables” without the qualifier. The brand book’s approved claim is “packed with up to 72% real veg”, which is flavour-specific. Option 2 also implies Lion’s Mane is in the generic 5-pack comparison.",
-    lines: [
-      "“Every single bowl is packed with up to 72% real dehydrated vegetables…”",
-      "Option 2: “72% real whole vegetables, wild thyme, and Lion’s Mane mushroom.”",
-      "Option 2: “Claim your 5-Pack Discovery Box today.”"
-    ],
-    action: "Keep “up to 72%” in every mention and state which flavours carry which percentage. Only mention Lion’s Mane on the mushroom flavour. Do not imply that every bowl or every box contains it."
-  },
-  {
-    id: "h6", severity: "high", target: "c3", scope: "Creative 03",
-    title: "The creative headline is a digestive-health claim",
-    why: "“Your Digestive System Will Thank You” promises a digestive benefit on the image itself. It repeats the route 02 problem in a format that is harder to qualify with small print.",
-    lines: [
-      "Creative headline: “YOUR DIGESTIVE SYSTEM WILL THANK YOU”"
-    ],
-    action: "Replace the headline before launch. A safe alternative in the same visual system is “REAL VEG. REAL COMFORT.” Keep the pack, the 5-a-day line and the Shop Now button."
-  },
-  {
-    id: "m1", severity: "medium", target: "v3", scope: "Copy routes 03 and 04",
-    title: "BIOVIT and the B12/D source need confirmation",
-    why: "Bella says the soup is boosted with organic vitamin D and B12 extract from shiitake mushroom, delivering 100% of the RDA. The copy names BIOVIT and gives 15% NRV for vitamin D. Confirm the consumer-facing ingredient name and the exact percentage per bowl.",
-    lines: [
-      "“naturally boosted with vitamins B12 and D by BIOVIT”",
-      "“100% of your daily Nutrient Reference Value (NRV) of vitamin B12 and 15% of your NRV of vitamin D”"
-    ],
-    action: "Confirm whether BIOVIT can be named in consumer copy. If not, use “organic vitamin B12 and vitamin D from shiitake mushroom”. Verify the 15% vitamin D figure for the prepared bowl."
-  },
-  {
-    id: "m2", severity: "medium", target: "v3", scope: "Copy route 03",
-    title: "“Works as hard as your supplements” implies equivalence",
-    why: "Even without naming a function, the line positions the soup as a supplement equivalent. That is a functional comparison the product may not be able to support.",
-    lines: [
-      "Headline 3: “The soup that works as hard as your supplements…”",
-      "Headline 4: “Lion’s Mane and 100% of your B12, in a soup that works as hard as your daily supplements”"
-    ],
-    action: "Remove the supplement comparison. A neutral alternative: “Lion’s Mane and 100% NRV B12, in a soup built for busy days.”"
-  },
-  {
-    id: "m3", severity: "medium", target: "v4", scope: "Copy route 04",
-    title: "“Lion’s Mane and 100% of your B12” implies the B12 comes from the mushroom",
-    why: "The headline links the two with “and”, which can read as though the Lion’s Mane supplies the B12. The B12 comes from the separate organic shiitake boost, according to Bella’s note.",
-    lines: [
-      "Headline: “Lion’s Mane and 100% of your B12, in one bowl”"
-    ],
-    action: "Use “plus” instead of “and”, and state the B12 source in the body: “Lion’s Mane plus 100% NRV B12, in one bowl.”"
-  },
-  {
-    id: "m4", severity: "medium", target: "v1", scope: "Copy route 01",
-    title: "The Nourish Awards claim is not flavour-specific",
-    why: "“Nourish Awards Winner 2024 & 2025” appears as a general proof point in a route that sells the 5-Flavour Discovery Box. The award applies to specific flavours, not every product in the box.",
-    lines: [
-      "“As seen on BBC Dragons' Den & Nourish Awards Winner 2024 & 2025”"
-    ],
-    action: "Name the winning flavours and years. Do not present the award as a property of every flavour. Do not attach it to Mushroom."
-  },
-  {
-    id: "m5", severity: "medium", target: "v1", scope: "Copy route 01",
-    title: "Dragons’ Den and the limited bundle routing",
-    why: "Bella’s Note 2 says the existing Dragons’ Den bundle (gift set with mug) is very limited and ads should point back to the variety pack instead. Route 01 uses the broadcast credit and a Discovery Box, so the landing page must not send people to the limited bundle.",
-    lines: [
-      "“As seen on BBC Dragons' Den…”",
-      "“Try the 5-Flavour Starter Discovery Box today…”"
-    ],
-    action: "Confirm the broadcast credit is current. Check the landing page and ad destination point to the variety pack, not the limited Dragons’ Den bundle."
-  },
-  {
-    id: "m6", severity: "medium", target: "v1", scope: "Copy route 01",
-    title: "The competitor ingredient list carries disparagement risk",
-    why: "The copy lists a competitor-style ingredient panel and calls it “salted, thickened starch water” and “industrial fillers”. The category comparison may be defensible, but the tone and the implication that all competitors use the same recipe need legal review.",
-    lines: [
-      "“Maltodextrin. Modified maize starch. Palm oil. Yeast extract. Artificial flavor enhancers.”",
-      "“That isn’t soup. That’s salted, thickened starch water.”",
-      "“Stop settling for industrial fillers.”"
-    ],
-    action: "Keep the comparison at category level, avoid implying every competitor uses the same panel, and remove the insult. “Many cup soups contain as little as 3% veg” is the brand-book-approved framing."
-  },
-  {
-    id: "m7", severity: "medium", target: "c5", scope: "Creative 05",
-    title: "The testimonial needs a release and verification",
-    why: "The creative uses a named customer, a direct quote and a five-star rating in paid media. All three need permission and a record of the original review.",
-    lines: [
-      "“ALL FLAVOURS ARE BEYOND DELICIOUS! REALLY GOOD TO KNOW YOU’RE EATING SOMETHING SO GOOD.”",
-      "“THE NEW FLAVOURS HAVE JUST ARRIVED AND I’M SO LOOKING FORWARD TO TRYING THEM.”",
-      "“Paul Radford” · five stars"
-    ],
-    action: "Confirm written permission to use the name and quote in paid ads, that the quote is unedited, and that the five-star rating is genuine. If any of that is missing, anonymise the quote or remove the creative."
-  },
-  {
-    id: "m8", severity: "medium", target: "c2", scope: "Creative 02",
-    title: "“Lasting fuel” implies sustained energy",
-    why: "The line suggests a sustained-energy benefit. Unless the product has a substantiated energy claim, this is an implied health benefit on the image.",
-    lines: [
-      "“LASTING FUEL FOR YOUR AFTERNOON”"
-    ],
-    action: "Soften to a non-health line, such as “A WARMING LUNCH FOR YOUR AFTERNOON”, or substantiate the sustained-energy claim."
-  },
-  {
-    id: "m9", severity: "medium", target: "v5", scope: "Copy route 05",
-    title: "The route is incomplete and still contains an internal note",
-    why: "Route 05 has no headline, description or call to action, and the supplied body opens with an internal note: “I'd prefer something closer to this, let me know!”. It cannot go into production as written.",
-    lines: [
-      "“I'd prefer something closer to this, let me know!”",
-      "No headline, description or CTA supplied."
-    ],
-    action: "Treat the internal note as direction, not copy. Complete the headline, description and CTA. The agency draft in the Rewrite tab is a starting point."
-  },
-  {
-    id: "m10", severity: "medium", target: "v1", scope: "All routes and creatives",
-    title: "Supporting claims need per-flavour substantiation",
-    why: "Several repeated claims are doing a lot of work: 1 of your 5-a-day, under 100 calories, high in protein, 15% NRV vitamin D and up to 72% real veg. Each needs a current per-flavour figure and a portion definition.",
-    lines: [
-      "“1 of your recommended 5-a-day” / “1 of Your 5-a-Day”",
-      "“Under 100 calories per satisfying, velvety bowl”",
-      "“HIGH IN PROTEIN” (creative 01 pack) “15% of your NRV of vitamin D”",
-      "“Up to 72% real vegetables”"
-    ],
-    action: "Supply the substantiation pack for each flavour: the 5-a-day portion calculation, calories per prepared bowl, protein content, vitamin D percentage and the real-veg percentage. Keep “up to” on the 72% claim."
-  },
-  {
-    id: "l1", severity: "low", target: "v2", scope: "Copy routes 02 and 05",
-    title: "“100% gluten-free” is unnecessary",
-    why: "“100% gluten-free” reads as an absolute claim and adds nothing to “gluten-free”. The brand book prefers plain, clean-label language.",
-    lines: [
-      "“100% Gluten-free, dairy-free, and plant-powered”",
-      "“100% gluten-free, dairy-free and plant-powered”"
-    ],
-    action: "Use “Gluten-free, dairy-free and plant-powered.” Keep “100% plant-powered” only if that is the approved brand phrasing."
-  },
-  {
-    id: "l2", severity: "low", target: "v2", scope: "Copy routes 02 and 05",
-    title: "The routes lead with a list of “no” claims",
-    why: "The brand book says not to lead with “low” or “no” claims. Routes 02 and 05 build their proof around Zero palm oil, Zero gums and similar lines before the taste benefit.",
-    lines: [
-      "“✓ Zero palm oil…”",
-      "“✓ Zero xanthan gum, guar gum, or artificial emulsifiers”",
-      "“✓ Zero palm oil / ✓ Zero gums or emulsifiers”"
-    ],
-    action: "Lead with taste, convenience and real veg. Move the “no” list lower as supporting proof, as the brand book’s key messaging does."
-  },
-  {
-    id: "l3", severity: "low", target: "v1", scope: "All copy routes",
-    title: "“Instant” is overused and US spelling slips in",
-    why: "The brand book says not to overuse “instant” or “powdered”. The copy also uses “flavor” and “stabilizers” in a UK document, and route 02’s headline reads “Finally An instant soup”.",
-    lines: [
-      "“instant soup” appears in routes 01, 02 and 03",
-      "“Artificial flavor enhancers”",
-      "“artificial stabilizers”",
-      "“Finally An instant soup…”"
-    ],
-    action: "Vary the language: “quick soup”, “cup soup”, “ready in 60 seconds”. Use UK spelling: flavour, stabilisers. Fix the headline grammar."
-  },
-  {
-    id: "l4", severity: "low", target: "c1", scope: "Creative 01",
-    title: "The on-pack “High in Protein” claim is visible",
-    why: "The pack in creative 01 carries a “HIGH IN PROTEIN” flash. Even though it is packaging rather than ad copy, it is legible in the asset and needs to be current and substantiated.",
-    lines: [
-      "Pack flash: “HIGH IN PROTEIN”"
-    ],
-    action: "Confirm the on-pack claim is current for this flavour and that the substantiation is on file. If not, use an updated pack shot."
-  },
-  {
-    id: "l5", severity: "low", target: "c3", scope: "Creative 03",
-    title: "The “Buy Women Built” device needs approval",
-    why: "The brand book says additional brand assets may be introduced only if they align with the established style and receive brand approval before use. “Buy Women Built” is a third-party device.",
-    lines: [
-      "“BUY WOMEN BUILT” badge"
-    ],
-    action: "Confirm the device is approved for paid media and that the usage rights cover this campaign."
-  },
-  {
-    id: "l6", severity: "low", target: "v1", scope: "All routes",
-    title: "The offer terms need a final check",
-    why: "The copy promises 15% off with SOUP15 and free UK delivery. The code, expiry date, delivery threshold and landing-page terms all need to match what is live at launch.",
-    lines: [
-      "“15% off using code SOUP15”",
-      "“Free UK delivery included”",
-      "“Try our Discovery Box today with code SOUP15.”"
-    ],
-    action: "Confirm the code is live, the expiry date, and the free-delivery terms. Put the terms on the landing page."
-  },
-  {
-    id: "l7", severity: "low", target: "v2", scope: "Copy route 02",
-    title: "The styled Unicode line may not be read by screen readers",
-    why: "“𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥. 𝐄𝐯𝐞𝐫.” uses mathematical bold Unicode characters. Some screen readers read these letter by letter or skip them.",
-    lines: [
-      "“𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥. 𝐄𝐯𝐞𝐫.”"
-    ],
-    action: "Use normal text with bold styling instead of Unicode look-alike characters."
-  }
-];
-
-const FLAG_TARGETS = {
-  h1: ["v3"], h2: ["v3"], h3: ["v2"], h4: ["v1"], h5: ["v1"], h6: ["c3"],
-  m1: ["v3", "v4"], m2: ["v3"], m3: ["v4"], m4: ["v1"], m5: ["v1"], m6: ["v1"],
-  m7: ["c5"], m8: ["c2"], m9: ["v5"],
-  m10: ["v1", "v2", "v3", "v4", "v5", "c1", "c2", "c3", "c4"],
-  l1: ["v2", "v5"], l2: ["v2", "v5"], l3: ["v1", "v2", "v3", "v4", "v5"],
-  l4: ["c1"], l5: ["c3"], l6: ["v1", "v2", "v3", "v4", "v5"], l7: ["v2"]
-};
-const FLAG_BY_ID = Object.fromEntries(FLAGS.map(f => [f.id, f]));
-const VARIANT_BY_ID = Object.fromEntries(VARIANTS.map(v => [v.id, v]));
-const CREATIVE_BY_ID = Object.fromEntries(CREATIVES.map(c => [c.id, c]));
-
-const SEVERITY_LABEL = { high: "High", medium: "Medium", low: "Low" };
-const STATUS_LABEL = { awaiting: "Awaiting", approved: "Approved", changes: "Changes needed", rejected: "Reject" };
-const DECISION_LABEL = {
-  approved: "Approved",
-  changes: "Approved with changes",
-  rejected: "Not approved"
-};
-
-/* ============================================================
-   STATE
-   ============================================================ */
-const STORAGE_KEY = "sk-relaunch-approval-v1";
 const state = {
-  profile: { name: "", role: "" },
-  comments: [],
-  edits: [],
-  rewrites: [],
-  statuses: { variant: {}, creative: {} },
-  events: [],
-  signoff: null,
-  savedAt: null
+  name: "",
+  overall: "",
+  creatives: {},
+  copy: {},
+  change: {},
+  changeText: {}
 };
 let storageOK = true;
-let activeTabs = {};
-let flagFilter = "all";
-let lightboxIndex = 0;
-let pendingReset = false;
 
-function uid(prefix) {
-  return (prefix || "id") + "-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 7);
-}
-function nowISO() { return new Date().toISOString(); }
-
-function loadState() {
+function load() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-    const saved = JSON.parse(raw);
-    if (saved.profile) state.profile = { name: saved.profile.name || "", role: saved.profile.role || "" };
-    if (Array.isArray(saved.comments)) state.comments = saved.comments;
-    if (Array.isArray(saved.edits)) state.edits = saved.edits;
-    if (Array.isArray(saved.rewrites)) state.rewrites = saved.rewrites;
-    if (saved.statuses) {
-      state.statuses.variant = saved.statuses.variant || {};
-      state.statuses.creative = saved.statuses.creative || {};
+    if (raw) {
+      const saved = JSON.parse(raw);
+      state.name = saved.name || "";
+      state.overall = saved.overall || "";
+      state.creatives = saved.creatives || {};
+      state.copy = saved.copy || {};
+      state.change = saved.change || {};
+      state.changeText = saved.changeText || {};
     }
-    if (Array.isArray(saved.events)) state.events = saved.events;
-    if (saved.signoff) state.signoff = saved.signoff;
-    state.savedAt = saved.savedAt || null;
+    const probe = STORAGE_KEY + "-probe";
+    localStorage.setItem(probe, "1");
+    localStorage.removeItem(probe);
   } catch (e) {
     storageOK = false;
   }
 }
-
-function persist(silent) {
-  state.savedAt = nowISO();
+function save() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     storageOK = true;
   } catch (e) {
     storageOK = false;
   }
-  updateSaveIndicator();
-  if (!silent) renderCounts();
+  const note = document.getElementById("storage-note");
+  if (note) note.hidden = storageOK;
 }
-
-function probeStorage() {
-  try {
-    const key = STORAGE_KEY + "-probe";
-    localStorage.setItem(key, "1");
-    localStorage.removeItem(key);
-    storageOK = true;
-  } catch (e) {
-    storageOK = false;
-  }
-}
-function updateSaveIndicator() {
-  const dot = document.getElementById("save-dot");
-  const text = document.getElementById("save-text");
-  if (!dot || !text) return;
-  if (!storageOK) {
-    dot.classList.add("is-off");
-    text.textContent = "Saving unavailable — export";
-    return;
-  }
-  dot.classList.remove("is-off");
-  if (!state.savedAt) { text.textContent = "Saves on this device"; return; }
-  const d = new Date(state.savedAt);
-  const time = d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-  text.textContent = "Saved " + time;
-}
-
-function reviewerName() {
-  const el = document.getElementById("reviewer-name");
-  return el ? el.value.trim() : state.profile.name;
-}
-function reviewerRole() {
-  const el = document.getElementById("reviewer-role");
-  return el ? el.value.trim() : state.profile.role;
-}
-function requireReviewer() {
-  const name = reviewerName();
-  if (!name) {
-    toast("Add your name in the review rail first.");
-    const el = document.getElementById("reviewer-name");
-    if (el) { el.focus(); el.scrollIntoView({ behavior: "smooth", block: "center" }); }
-    return null;
-  }
-  return name;
-}
-
-/* ============================================================
-   HELPERS
-   ============================================================ */
-function esc(value) {
-  return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
-    return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+function restore() {
+  document.getElementById("reviewer-name").value = state.name || "";
+  document.getElementById("overall").value = state.overall || "";
+  document.querySelectorAll("[data-creative]").forEach(function (el) {
+    el.checked = !!state.creatives[el.dataset.creative];
   });
+  document.querySelectorAll("[data-copy]").forEach(function (el) {
+    el.checked = !!state.copy[el.dataset.copy];
+  });
+  document.querySelectorAll("[data-change-toggle]").forEach(function (el) {
+    const id = el.dataset.changeToggle;
+    el.checked = !!state.change[id];
+    const box = document.querySelector('[data-change-box="' + id + '"]');
+    if (box) box.hidden = !el.checked;
+  });
+  document.querySelectorAll("[data-change-text]").forEach(function (el) {
+    el.value = state.changeText[el.dataset.changeText] || "";
+  });
+  updateStatus();
+  const note = document.getElementById("storage-note");
+  if (note) note.hidden = storageOK;
 }
-function formatCopy(text) {
-  if (!text) return "";
-  return esc(text).split("\n").map(function (line) {
-    if (!line.trim()) return '<span class="copy-line blank"></span>';
-    if (line.trim().startsWith("✓")) return '<span class="copy-line check">' + line + "</span>";
-    return '<span class="copy-line">' + line + "</span>";
-  }).join("");
+function updateStatus() {
+  const creatives = Object.keys(state.creatives).filter(function (k) { return state.creatives[k]; }).length;
+  const copy = Object.keys(state.copy).filter(function (k) { return state.copy[k]; }).length;
+  const changes = Object.keys(state.change).filter(function (k) {
+    return state.change[k] && (state.changeText[k] || "").trim();
+  }).length;
+  const el = document.getElementById("status");
+  if (el) {
+    el.textContent = creatives + " of 5 creatives approved · " + copy + " of 5 copy routes approved · " +
+      changes + " copy change" + (changes === 1 ? "" : "s");
+  }
 }
-function formatDate(iso) {
-  if (!iso) return "";
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) + " · " +
-    d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-}
-function relativeTime(iso) {
-  if (!iso) return "";
-  const diff = Date.now() - new Date(iso).getTime();
-  const min = Math.round(diff / 60000);
-  if (min < 1) return "just now";
-  if (min < 60) return min + " min ago";
-  const hr = Math.round(min / 60);
-  if (hr < 24) return hr + " hr ago";
-  const day = Math.round(hr / 24);
-  if (day < 7) return day + " d ago";
-  return formatDate(iso);
-}
-function initials(name) {
-  return String(name || "?").trim().split(/\s+/).slice(0, 2).map(function (p) { return p[0] || ""; }).join("").toUpperCase() || "?";
+function buildNote() {
+  const lines = [];
+  const ids = [1, 2, 3, 4, 5];
+  const pad = function (id) { return "0" + id; };
+  lines.push("Soul Kitchen relaunch approval");
+  if (state.name.trim()) lines.push("Name: " + state.name.trim());
+  lines.push("");
+  const creativeYes = ids.filter(function (id) { return !!state.creatives[id]; });
+  const creativeNo = ids.filter(function (id) { return !state.creatives[id]; });
+  lines.push("Creatives approved: " + (creativeYes.map(pad).join(", ") || "none"));
+  lines.push("Creatives not approved: " + (creativeNo.map(pad).join(", ") || "none"));
+  const copyYes = ids.filter(function (id) { return !!state.copy[id]; });
+  lines.push("Copy approved: " + (copyYes.map(pad).join(", ") || "none"));
+  const changes = ids.filter(function (id) {
+    return state.change[id] && (state.changeText[id] || "").trim();
+  });
+  const copyNo = ids.filter(function (id) {
+    return !state.copy[id] && changes.indexOf(id) === -1;
+  });
+  lines.push("Copy not approved: " + (copyNo.map(pad).join(", ") || "none"));
+  if (changes.length) {
+    lines.push("");
+    lines.push("Copy changes:");
+    changes.forEach(function (id) {
+      lines.push(pad(id) + " " + COPY_NAMES[id] + " — " + state.changeText[id].trim().replace(/\s+/g, " "));
+    });
+  }
+  if (state.overall.trim()) {
+    lines.push("");
+    lines.push("Anything else: " + state.overall.trim());
+  }
+  return lines.join("\n");
 }
 function toast(message) {
   const el = document.getElementById("toast");
@@ -1883,580 +956,11 @@ function toast(message) {
   el.textContent = message;
   el.classList.add("is-on");
   clearTimeout(toast._t);
-  toast._t = setTimeout(function () { el.classList.remove("is-on"); }, 3200);
+  toast._t = setTimeout(function () { el.classList.remove("is-on"); }, 2600);
 }
-function statusOf(type, id) {
-  return (state.statuses[type] && state.statuses[type][id]) || "awaiting";
-}
-function setStatus(type, id, status, silent) {
-  const from = statusOf(type, id);
-  if (!state.statuses[type]) state.statuses[type] = {};
-  state.statuses[type][id] = status;
-  if (!silent && from !== status) {
-    const name = reviewerName() || "Reviewer";
-    state.events.push({ id: uid("ev"), kind: "status", at: nowISO(), author: name, targetType: type, targetId: id, from: from, to: status });
-  }
-  persist(true);
-}
-function currentCopy(variant) {
-  const edits = state.edits.filter(function (e) { return e.variantId === variant.id; });
-  if (!edits.length) return defaultCopy(variant);
-  const latest = edits[edits.length - 1];
-  const base = defaultCopy(variant);
-  return {
-    headlines: Array.isArray(latest.fields.headlines) ? latest.fields.headlines : base.headlines,
-    bodies: Array.isArray(latest.fields.bodies) ? latest.fields.bodies : base.bodies,
-    description: typeof latest.fields.description === "string" ? latest.fields.description : base.description,
-    cta: typeof latest.fields.cta === "string" ? latest.fields.cta : base.cta
-  };
-}
-function defaultCopy(variant) {
-  return {
-    headlines: variant.headlines.map(function (h) { return { label: h.label, text: h.text }; }),
-    bodies: variant.bodies.map(function (b) { return { label: b.label, text: b.text }; }),
-    description: variant.description || "",
-    cta: variant.cta || ""
-  };
-}
-function lastEdit(variantId) {
-  const edits = state.edits.filter(function (e) { return e.variantId === variantId; });
-  return edits.length ? edits[edits.length - 1] : null;
-}
-function flagsFor(targetId) {
-  return FLAGS.filter(function (f) {
-    const targets = FLAG_TARGETS[f.id] || [f.target];
-    return targets.indexOf(targetId) !== -1;
-  });
-}
-function commentsFor(type, id) {
-  return state.comments.filter(function (c) { return c.targetType === type && c.targetId === id; });
-}
-function rewritesFor(variantId) {
-  return state.rewrites.filter(function (r) { return r.variantId === variantId; });
-}
-
-/* ============================================================
-   RENDER: STATUS / COMMENT HELPERS
-   ============================================================ */
-function statusControl(type, id, small) {
-  const current = statusOf(type, id);
-  return '<div class="status-control' + (small ? " small" : "") + '" role="group" aria-label="Review status">' +
-    ["awaiting", "approved", "changes", "rejected"].map(function (s) {
-      return '<button type="button" data-action="status" data-target-type="' + type + '" data-target-id="' + id + '" data-status="' + s + '" aria-pressed="' + (current === s) + '" class="' + (current === s ? "is-active" : "") + '">' + STATUS_LABEL[s] + "</button>";
-    }).join("") + "</div>";
-}
-
-function commentsHTML(type, id) {
-  const list = commentsFor(type, id);
-  if (!list.length) return '<p class="comments-empty">No comments yet. Add the first note for this ' + (type === "variant" ? "route" : "creative") + ".</p>";
-  return list.map(function (c) {
-    const typeLabel = c.commentType === "request" ? "Change request" : c.commentType === "edit" ? "Edit note" : "Comment";
-    return '<div class="comment' + (c.resolved ? " resolved" : "") + '" data-comment-id="' + esc(c.id) + '">' +
-      '<div class="avatar" aria-hidden="true">' + esc(initials(c.author)) + "</div>" +
-      '<div><div class="comment-head"><span class="comment-name">' + esc(c.author) + "</span>" +
-      '<span class="comment-time" title="' + esc(formatDate(c.at)) + '">' + esc(relativeTime(c.at)) + "</span>" +
-      '<span class="comment-type ' + esc(c.commentType || "comment") + '">' + esc(typeLabel) + "</span>" +
-      (c.resolved ? '<span class="comment-type">Resolved</span>' : "") +
-      '</div><div class="comment-text">' + esc(c.text) + "</div>" +
-      '<div class="comment-actions"><button type="button" data-action="toggle-comment" data-comment-id="' + esc(c.id) + '">' + (c.resolved ? "Reopen" : "Resolve") + "</button>" +
-      '<button type="button" data-action="delete-comment" data-comment-id="' + esc(c.id) + '">Remove</button></div></div></div>';
-  }).join("");
-}
-
-function commentFormHTML(type, id) {
-  return '<form class="comment-form" data-form="comment" data-target-type="' + type + '" data-target-id="' + id + '">' +
-    '<div class="form-grid"><div class="field"><label for="ct-' + type + "-" + id + '">Type</label>' +
-    '<select class="select" id="ct-' + type + "-" + id + '" name="commentType">' +
-    '<option value="comment">Comment</option><option value="request">Change request</option><option value="edit">Edit note</option>' +
-    "</select></div>" +
-    '<div class="field"><label for="cc-' + type + "-" + id + '">Your note</label>' +
-    '<textarea class="textarea" id="cc-' + type + "-" + id + '" name="text" required placeholder="What should change, or what do you want to flag?"></textarea></div></div>' +
-    '<div class="form-actions"><span class="form-note">Posting as <strong data-author>' + esc(reviewerName() || "add your name first") + "</strong></span>" +
-    '<button class="btn btn-primary btn-small" type="submit">Post comment</button></div></form>';
-}
-
-function rewriteListHTML(variantId) {
-  const list = rewritesFor(variantId);
-  if (!list.length) return '<p class="comments-empty">No saved rewrites for this route yet.</p>';
-  return list.map(function (r) {
-    return '<div class="rewrite-card"><div class="rewrite-card-head"><div><h5>' + esc(r.title || "Untitled rewrite") + "</h5>" +
-      '<div class="rewrite-meta">' + esc(r.author) + " · " + esc(formatDate(r.at)) + "</div></div>" +
-      '<div class="rewrite-actions"><button class="btn btn-small" type="button" data-action="apply-rewrite" data-rewrite-id="' + esc(r.id) + '">Apply to copy</button>' +
-      '<button class="btn btn-small" type="button" data-action="copy-rewrite" data-rewrite-id="' + esc(r.id) + '">Copy</button>' +
-      '<button class="btn btn-small btn-danger" type="button" data-action="delete-rewrite" data-rewrite-id="' + esc(r.id) + '">Remove</button></div></div>' +
-      (r.headline ? '<div class="rewrite-meta"><b>Headline:</b> ' + esc(r.headline) + "</div>" : "") +
-      (r.description ? '<div class="rewrite-meta"><b>Description:</b> ' + esc(r.description) + "</div>" : "") +
-      (r.cta ? '<div class="rewrite-meta"><b>CTA:</b> ' + esc(r.cta) + "</div>" : "") +
-      '<details><summary>Read rewrite</summary><div class="copy-text">' + formatCopy(r.text) + "</div></details>" +
-      (r.notes ? '<div class="rewrite-meta" style="margin-top:8px"><b>Notes:</b> ' + esc(r.notes) + "</div>" : "") +
-      "</div>";
-  }).join("");
-}
-
-function revisionHistoryHTML(variant) {
-  const edits = state.edits.filter(function (e) { return e.variantId === variant.id; });
-  const items = edits.map(function (e) {
-    return '<li><span><b>' + esc(e.author) + "</b> · " + esc(formatDate(e.at)) + (e.note ? " · " + esc(e.note) : "") + "</span>" +
-      '<button class="btn btn-small" type="button" data-action="restore-edit" data-edit-id="' + esc(e.id) + '">Restore</button></li>';
-  }).join("");
-  return '<details class="revision-history"><summary>Revision history (' + edits.length + " saved · supplied copy preserved)</summary><ol>" +
-    (items || '<li><span>No edits yet. The supplied copy is shown above.</span></li>') +
-    '<li><span><b>Supplied copy</b> · original</span><button class="btn btn-small" type="button" data-action="restore-original" data-variant-id="' + esc(variant.id) + '">Restore original</button></li></ol></details>';
-}
-
-function copyViewHTML(variant) {
-  const copy = currentCopy(variant);
-  const edited = !!lastEdit(variant.id);
-  const head = copy.headlines.length ? copy.headlines.map(function (h) {
-    return '<div class="copy-block"><div class="copy-label">' + esc(h.label) + '</div><div class="copy-text">' + formatCopy(h.text) + "</div></div>";
-  }).join("") : '<div class="copy-block"><div class="copy-label">Headline</div><span class="copy-missing">Not supplied</span></div>';
-  const body = copy.bodies.length ? copy.bodies.map(function (b) {
-    return '<div class="copy-block"><div class="copy-label">' + esc(b.label) + '</div><div class="copy-text">' + formatCopy(b.text) + "</div></div>";
-  }).join("") : '<div class="copy-block"><div class="copy-label">Primary text</div><span class="copy-missing">Not supplied</span></div>';
-  const desc = copy.description ? '<div class="copy-block"><div class="copy-label">Description</div><div class="copy-text">' + formatCopy(copy.description) + "</div></div>" : '<div class="copy-block"><div class="copy-label">Description</div><span class="copy-missing">Not supplied</span></div>';
-  const cta = copy.cta ? '<div class="copy-block"><div class="copy-label">Call to action</div><div class="copy-text">' + formatCopy(copy.cta) + "</div></div>" : '<div class="copy-block"><div class="copy-label">Call to action</div><span class="copy-missing">Not supplied</span></div>';
-  const latest = lastEdit(variant.id);
-  return '<div class="copy-toolbar"><div class="save-state">' +
-    (edited ? '<span class="edited">Edited</span> · last saved by <strong>' + esc(latest.author) + "</strong> · " + esc(formatDate(latest.at)) + " · " + esc(latest.note || "") : "Showing the supplied copy") +
-    '</div><div class="row"><button class="btn btn-small" type="button" data-action="copy-copy" data-variant-id="' + esc(variant.id) + '">Copy text</button>' +
-    '<button class="btn btn-small btn-primary" type="button" data-action="edit" data-variant-id="' + esc(variant.id) + '">Edit copy</button></div></div>' +
-    head + body + desc + cta + revisionHistoryHTML(variant);
-}
-
-function copyEditHTML(variant) {
-  const copy = currentCopy(variant);
-  const headlines = copy.headlines.length ? copy.headlines : [{ label: "Headline", text: "" }];
-  const bodies = copy.bodies.length ? copy.bodies : [{ label: "Primary text", text: "" }];
-  const headlineFields = headlines.map(function (h, i) {
-    return '<div class="field span-2"><label for="h-' + variant.id + "-" + i + '">' + esc(h.label) + '</label><textarea class="textarea" id="h-' + variant.id + "-" + i + '" data-kind="headline" data-index="' + i + '" rows="2">' + esc(h.text) + "</textarea></div>";
-  }).join("");
-  const bodyFields = bodies.map(function (b, i) {
-    return '<div class="field span-2"><label for="b-' + variant.id + "-" + i + '">' + esc(b.label) + '</label><textarea class="textarea" id="b-' + variant.id + "-" + i + '" data-kind="body" data-index="' + i + '" rows="12">' + esc(b.text) + "</textarea></div>";
-  }).join("");
-  return '<form class="edit-form" data-form="edit" data-variant-id="' + esc(variant.id) + '">' +
-    '<div class="form-grid">' + headlineFields + bodyFields +
-    '<div class="field"><label for="d-' + variant.id + '">Description</label><textarea class="textarea" id="d-' + variant.id + '" name="description" rows="3">' + esc(copy.description) + "</textarea></div>" +
-    '<div class="field"><label for="cta-' + variant.id + '">Call to action</label><input class="input" id="cta-' + variant.id + '" name="cta" value="' + esc(copy.cta) + '"></div>' +
-    '</div><div class="form-actions"><span class="form-note">Saving adds a revision. The supplied copy stays in the history.</span>' +
-    '<button class="btn btn-small" type="button" data-action="cancel-edit" data-variant-id="' + esc(variant.id) + '">Cancel</button>' +
-    '<button class="btn btn-primary btn-small" type="submit">Save changes</button></div></form>';
-}
-
-function routeHTML(variant) {
-  const flags = flagsFor(variant.id);
-  const high = flags.filter(function (f) { return f.severity === "high"; }).length;
-  const comments = commentsFor("variant", variant.id);
-  const rewrites = rewritesFor(variant.id);
-  const active = activeTabs[variant.id] || "copy";
-  const suggested = variant.suggestedCreative ? CREATIVE_BY_ID[variant.suggestedCreative] : null;
-  const suggestedLink = suggested ? '<a href="#' + suggested.id + '">Creative ' + suggested.num + " · " + esc(suggested.title) + "</a>" : '<span style="color:var(--warn)">No matching mushroom asset supplied</span>';
-  const flagStrip = flags.length ? '<div class="route-flags">' + flags.map(function (f) {
-    return '<div class="flag-mini"><span class="dot ' + f.severity + '" aria-hidden="true"></span><span><a href="#flag-' + f.id + '">' + esc(f.title) + "</a> · " + SEVERITY_LABEL[f.severity] + "</span></div>";
-  }).join("") + "</div>" : "";
-  const highCallout = high ? '<div class="callout" style="margin-top:0;margin-bottom:18px"><strong>' + high + " high-priority check" + (high > 1 ? "s" : "") + " on this route</strong><p>Read the claim checks before approving. " + (variant.id === "v3" ? "Lion’s Mane function claims and the mushroom Nourish Award are launch blockers." : variant.id === "v2" ? "The route’s digestive-health claims need to be removed." : "The comparison figures need a source or a wording change.") + "</p></div>" : "";
-
-  return '<article class="route" id="' + esc(variant.id) + '" style="--accent:' + variant.accent + ";--accent-ink:" + variant.accentInk + '">' +
-    '<div class="route-head"><div class="route-id" aria-hidden="true">' + esc(variant.num) + '</div>' +
-    '<div class="route-title-wrap"><p class="eyebrow">Copy route ' + esc(variant.num) + " · " + esc(variant.angle) + '</p><h3 class="route-title">' + esc(variant.name) + '</h3></div>' +
-    '<div class="route-status">' + statusControl("variant", variant.id) + "</div></div>" +
-    '<div class="route-meta"><span class="meta-item"><b>Suggested creative</b> ' + suggestedLink + '</span>' +
-    '<span class="meta-item"><b>Flags</b> ' + flags.length + " (" + high + ' high)</span>' +
-    '<span class="meta-item"><b>Audience</b> ' + esc(variant.audience) + '</span>' +
-    '<span class="meta-item"><b>Comments</b> ' + comments.length + '</span></div>' +
-    '<div class="tabs" role="tablist" aria-label="Route ' + esc(variant.num) + ' sections">' +
-    '<button class="tab" role="tab" id="tab-' + variant.id + '-copy" aria-controls="panel-' + variant.id + '-copy" aria-selected="' + (active === "copy") + '" data-action="tab" data-variant-id="' + variant.id + '" data-tab="copy">Copy <span class="tab-count">' + (variant.headlines.length + variant.bodies.length) + "</span></button>" +
-    '<button class="tab" role="tab" id="tab-' + variant.id + '-comments" aria-controls="panel-' + variant.id + '-comments" aria-selected="' + (active === "comments") + '" data-action="tab" data-variant-id="' + variant.id + '" data-tab="comments">Comments <span class="tab-count">' + comments.length + "</span></button>" +
-    '<button class="tab" role="tab" id="tab-' + variant.id + '-rewrite" aria-controls="panel-' + variant.id + '-rewrite" aria-selected="' + (active === "rewrite") + '" data-action="tab" data-variant-id="' + variant.id + '" data-tab="rewrite">Rewrite <span class="tab-count">' + rewrites.length + "</span></button></div>" +
-    '<div class="tab-panel" role="tabpanel" id="panel-' + variant.id + '-copy" aria-labelledby="tab-' + variant.id + '-copy"' + (active === "copy" ? "" : " hidden") + ">" +
-    highCallout + flagStrip +
-    '<div id="copy-view-' + variant.id + '">' + copyViewHTML(variant) + "</div>" +
-    '<div id="copy-edit-' + variant.id + '" hidden>' + copyEditHTML(variant) + "</div></div>" +
-    '<div class="tab-panel" role="tabpanel" id="panel-' + variant.id + '-comments" aria-labelledby="tab-' + variant.id + '-comments"' + (active === "comments" ? "" : " hidden") + ">" +
-    '<div class="comments-head"><div><h4>Comments on this route</h4><p class="small muted">Saved on this device. Export the record to share.</p></div></div>' +
-    '<div class="comments-list" id="comments-' + variant.id + '">' + commentsHTML("variant", variant.id) + "</div>" +
-    commentFormHTML("variant", variant.id) + "</div>" +
-    '<div class="tab-panel" role="tabpanel" id="panel-' + variant.id + '-rewrite" aria-labelledby="tab-' + variant.id + '-rewrite"' + (active === "rewrite" ? "" : " hidden") + ">" +
-    '<p class="rewrite-intro">Write a different route here. Saving a rewrite does not change the copy until you apply it. Applying a rewrite adds a revision; the supplied copy stays in the history.</p>' +
-    '<form class="rewrite-form" data-form="rewrite" data-variant-id="' + esc(variant.id) + '"><div class="form-grid">' +
-    '<div class="field"><label for="rt-' + variant.id + '">Rewrite title</label><input class="input" id="rt-' + variant.id + '" name="title" placeholder="e.g. Softer everyday lunch"></div>' +
-    '<div class="field"><label for="rh-' + variant.id + '">Headline <span class="hint">(optional)</span></label><input class="input" id="rh-' + variant.id + '" name="headline" placeholder="Leave blank to keep the current headline"></div>' +
-    '<div class="field span-2"><label for="rw-' + variant.id + '">Rewrite</label><textarea class="textarea" id="rw-' + variant.id + '" name="text" required placeholder="Write the new primary text here…"></textarea></div>' +
-    '<div class="field span-2"><label for="rd-' + variant.id + '">Description <span class="hint">(optional)</span></label><textarea class="textarea" id="rd-' + variant.id + '" name="description" rows="2" placeholder="Leave blank to keep the current description"></textarea></div>' +
-    '<div class="field"><label for="rc-' + variant.id + '">Call to action <span class="hint">(optional)</span></label><input class="input" id="rc-' + variant.id + '" name="cta" placeholder="Leave blank to keep the current CTA"></div>' +
-    '<div class="field"><label for="rn-' + variant.id + '">Notes for the team <span class="hint">(optional)</span></label><textarea class="textarea" id="rn-' + variant.id + '" name="notes" rows="2" placeholder="Why this route, what it fixes…"></textarea></div>' +
-    '</div><div class="form-actions"><button class="btn btn-small" type="button" data-action="load-suggested" data-variant-id="' + variant.id + '">Load agency draft</button>' +
-    '<button class="btn btn-primary btn-small" type="submit">Save rewrite</button></div>' +
-    '<p class="suggested-note">The agency draft is a discussion starter, not approved copy. It is built from the brand book and Bella’s notes, and still needs your sign-off.</p></form>' +
-    '<div class="rewrite-list" id="rewrites-' + variant.id + '">' + rewriteListHTML(variant.id) + "</div></div></article>";
-}
-
-function renderRoutes() {
-  const root = document.getElementById("route-list");
-  if (!root) return;
-  root.innerHTML = VARIANTS.map(routeHTML).join("");
-}
-
-function creativeHTML(c) {
-  const flags = flagsFor(c.id);
-  const comments = commentsFor("creative", c.id);
-  const status = statusOf("creative", c.id);
-  const flagHTML = flags.length ? '<div class="creative-flags">' + flags.map(function (f) {
-    return '<div class="creative-flag"><span class="dot ' + f.severity + '" aria-hidden="true"></span><span><a href="#flag-' + f.id + '">' + esc(f.title) + "</a></span></div>";
-  }).join("") + "</div>" : '<p class="tiny muted" style="margin-bottom:10px">No claim checks on this asset.</p>';
-  return '<article class="creative-card" id="' + esc(c.id) + '" style="--accent:' + c.accent + '">' +
-    '<button class="creative-img-btn" type="button" data-action="lightbox" data-creative-id="' + esc(c.id) + '" aria-label="Open creative ' + esc(c.num) + ": " + esc(c.title) + '">' +
-    '<img src="' + esc(c.file) + '" alt="' + esc(c.alt) + '" width="1400" height="1750" loading="eager">' +
-    '<span class="asset-chip">4:5 · ' + esc(c.num) + "</span></button>" +
-    '<div class="creative-body"><div class="creative-top"><span class="eyebrow">Creative ' + esc(c.num) + "</span><span class=\"tiny muted\">" + esc(c.angle) + "</span></div>" +
-    "<h3>" + esc(c.title) + "</h3><p class=\"flavour\">" + esc(c.flavour) + "</p>" +
-    '<p class="creative-note">' + esc(c.note) + "</p>" + flagHTML +
-    statusControl("creative", c.id, true) +
-    '<details class="comments-drawer"><summary>Comments (' + comments.length + ")</summary>" +
-    '<div class="comments-list" id="comments-' + c.id + '">' + commentsHTML("creative", c.id) + "</div>" +
-    commentFormHTML("creative", c.id) + "</details></div></article>";
-}
-
-function renderCreatives() {
-  const root = document.getElementById("creative-grid");
-  if (!root) return;
-  root.innerHTML = CREATIVES.map(creativeHTML).join("");
-}
-
-function flagCardHTML(f) {
-  const target = VARIANT_BY_ID[f.target] || CREATIVE_BY_ID[f.target];
-  const href = f.target;
-  const label = target ? (VARIANT_BY_ID[f.target] ? "Copy route " + target.num : "Creative " + target.num) : f.scope;
-  return '<article class="flag-card" id="flag-' + esc(f.id) + '" data-severity="' + f.severity + '" data-flag-id="' + esc(f.id) + '">' +
-    '<div class="flag-head"><span class="severity">' + SEVERITY_LABEL[f.severity] + '</span><span class="flag-id">' + esc(f.id.toUpperCase()) + '</span><span class="flag-scope">' + esc(f.scope) + ' · <a href="#' + esc(href) + '">' + esc(label) + "</a></span>" +
-    "<h3>" + esc(f.title) + "</h3></div>" +
-    '<p class="flag-why">' + esc(f.why) + "</p>" +
-    '<details class="flag-lines"' + (f.severity === "high" ? " open" : "") + '><summary>Quoted lines (' + f.lines.length + ")</summary><ul>" + f.lines.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul></details>" +
-    '<div class="flag-action"><strong>Do this</strong><p>' + esc(f.action) + "</p></div></article>";
-}
-
-function renderFlags() {
-  const root = document.getElementById("flag-list");
-  if (!root) return;
-  root.innerHTML = FLAGS.filter(function (f) { return flagFilter === "all" || f.severity === flagFilter; }).map(flagCardHTML).join("");
-  const buttons = document.querySelectorAll("#flag-filters .filter-btn");
-  buttons.forEach(function (b) { b.classList.toggle("is-active", b.dataset.filter === flagFilter); });
-}
-
-function renderActivity() {
-  const root = document.getElementById("activity-list");
-  if (!root) return;
-  const items = [];
-  state.comments.forEach(function (c) {
-    const target = VARIANT_BY_ID[c.targetId] || CREATIVE_BY_ID[c.targetId];
-    const label = target ? (VARIANT_BY_ID[c.targetId] ? "route " + target.num + " · " + target.name : "creative " + target.num + " · " + target.title) : c.targetId;
-    items.push({ at: c.at, kind: "comment", title: c.author + " commented on " + label, text: c.text.length > 150 ? c.text.slice(0, 150) + "…" : c.text });
-  });
-  state.edits.forEach(function (e) {
-    const v = VARIANT_BY_ID[e.variantId];
-    items.push({ at: e.at, kind: "edit", title: e.author + " saved an edit to route " + (v ? v.num + " · " + v.name : e.variantId), text: e.note || "Copy revised." });
-  });
-  state.rewrites.forEach(function (r) {
-    const v = VARIANT_BY_ID[r.variantId];
-    items.push({ at: r.at, kind: "rewrite", title: r.author + " saved a rewrite for route " + (v ? v.num + " · " + v.name : r.variantId), text: r.title || "Untitled rewrite" });
-  });
-  state.events.forEach(function (e) {
-    if (e.kind === "status") {
-      const target = VARIANT_BY_ID[e.targetId] || CREATIVE_BY_ID[e.targetId];
-      const label = target ? (VARIANT_BY_ID[e.targetId] ? "route " + target.num : "creative " + target.num) : e.targetId;
-      items.push({ at: e.at, kind: "status", title: e.author + " marked " + label + " as " + STATUS_LABEL[e.to], text: "Previously " + STATUS_LABEL[e.from] + "." });
-    }
-    if (e.kind === "signoff") {
-      items.push({ at: e.at, kind: "signoff", title: e.author + " recorded a sign-off", text: DECISION_LABEL[e.decision] || e.decision });
-    }
-  });
-  items.sort(function (a, b) { return new Date(b.at) - new Date(a.at); });
-  if (!items.length) {
-    root.innerHTML = '<p class="activity-empty">Nothing saved yet. Comments, edits, rewrites and status changes will appear here as you work.</p>';
-    return;
-  }
-  root.innerHTML = items.slice(0, 60).map(function (i) {
-    return '<div class="activity-item" data-kind="' + esc(i.kind) + '"><h4>' + esc(i.title) + '</h4><p>' + esc(i.text) + " · " + esc(relativeTime(i.at)) + "</p></div>";
-  }).join("");
-}
-
-function renderCounts() {
-  const vStatuses = VARIANTS.map(function (v) { return statusOf("variant", v.id); });
-  const cStatuses = CREATIVES.map(function (c) { return statusOf("creative", c.id); });
-  const approved = vStatuses.filter(function (s) { return s === "approved"; }).length + cStatuses.filter(function (s) { return s === "approved"; }).length;
-  const total = VARIANTS.length + CREATIVES.length;
-  const pct = total ? Math.round((approved / total) * 100) : 0;
-  const progressLabel = document.getElementById("progress-label");
-  const progressBar = document.getElementById("progress-bar");
-  const controlApproved = document.getElementById("control-approved");
-  const controlBar = document.getElementById("control-bar");
-  if (progressLabel) progressLabel.textContent = approved + " / " + total;
-  if (progressBar) progressBar.style.width = pct + "%";
-  if (controlApproved) controlApproved.textContent = approved + " of " + total;
-  if (controlBar) controlBar.style.width = pct + "%";
-  const cc = document.getElementById("count-comments");
-  const cr = document.getElementById("count-rewrites");
-  const ce = document.getElementById("count-edits");
-  if (cc) cc.textContent = state.comments.length;
-  if (cr) cr.textContent = state.rewrites.length;
-  if (ce) ce.textContent = state.edits.length;
-  updateDocStatus(vStatuses, cStatuses, approved, total);
-}
-
-function updateDocStatus(vStatuses, cStatuses, approved, total) {
-  const el = document.getElementById("doc-status");
-  if (!el) return;
-  if (state.signoff) {
-    el.textContent = DECISION_LABEL[state.signoff.decision] || "Signed off";
-    return;
-  }
-  const anyDecision = vStatuses.concat(cStatuses).some(function (s) { return s !== "awaiting"; });
-  if (approved === total && total > 0) { el.textContent = "Ready for sign-off"; return; }
-  if (anyDecision) { el.textContent = "In review"; return; }
-  el.textContent = "Awaiting approval";
-}
-
-function renderSignoff() {
-  const stamp = document.getElementById("stamp");
-  const empty = document.getElementById("stamp-empty");
-  const nameInput = document.getElementById("signoff-name");
-  const roleInput = document.getElementById("signoff-role");
-  const decisionInput = document.getElementById("signoff-decision");
-  const notesInput = document.getElementById("signoff-notes");
-  if (state.signoff) {
-    if (nameInput) nameInput.value = state.signoff.name || "";
-    if (roleInput) roleInput.value = state.signoff.role || "";
-    if (decisionInput) decisionInput.value = state.signoff.decision || "";
-    if (notesInput) notesInput.value = state.signoff.notes || "";
-    if (stamp && empty) {
-      stamp.hidden = false;
-      empty.hidden = true;
-      const color = state.signoff.decision === "approved" ? "var(--ok)" : state.signoff.decision === "changes" ? "var(--warn)" : "var(--danger)";
-      stamp.style.setProperty("--stamp-color", color);
-      document.getElementById("stamp-decision").textContent = DECISION_LABEL[state.signoff.decision] || "Signed off";
-      document.getElementById("stamp-name").textContent = state.signoff.name + (state.signoff.role ? ", " + state.signoff.role : "");
-      document.getElementById("stamp-meta").textContent = formatDate(state.signoff.at);
-    }
-  } else {
-    if (stamp && empty) { stamp.hidden = true; empty.hidden = false; }
-    if (nameInput && !nameInput.value) nameInput.value = state.profile.name || "";
-    if (roleInput && !roleInput.value) roleInput.value = state.profile.role || "";
-  }
-  const clear = document.getElementById("clear-signoff");
-  if (clear) clear.style.display = state.signoff ? "" : "none";
-}
-
-function renderAll() {
-  renderRoutes();
-  renderCreatives();
-  renderFlags();
-  renderActivity();
-  renderCounts();
-  renderSignoff();
-  syncProfileInputs();
-  attachAutoGrow();
-}
-
-function syncProfileInputs() {
-  const n = document.getElementById("reviewer-name");
-  const r = document.getElementById("reviewer-role");
-  if (n && n.value !== state.profile.name) n.value = state.profile.name;
-  if (r && r.value !== state.profile.role) r.value = state.profile.role;
-  document.querySelectorAll("[data-author]").forEach(function (el) {
-    el.textContent = reviewerName() || "add your name first";
-  });
-}
-
-function attachAutoGrow() {
-  document.querySelectorAll("textarea").forEach(function (ta) {
-    ta.style.height = "auto";
-    ta.style.height = Math.max(ta.scrollHeight, 70) + "px";
-    ta.oninput = function () { ta.style.height = "auto"; ta.style.height = Math.max(ta.scrollHeight, 70) + "px"; };
-  });
-}
-
-/* ============================================================
-   ACTIONS
-   ============================================================ */
-function handleStatus(btn) {
-  const type = btn.dataset.targetType;
-  const id = btn.dataset.targetId;
-  const status = btn.dataset.status;
-  if (!type || !id || !status) return;
-  const name = reviewerName();
-  if (status !== "awaiting" && !name) { requireReviewer(); return; }
-  setStatus(type, id, status, false);
-  const card = document.getElementById(id);
-  if (card) {
-    const control = card.querySelector(".status-control");
-    if (control) {
-      control.querySelectorAll("button[data-status]").forEach(function (b) {
-        const active = b.dataset.status === status;
-        b.classList.toggle("is-active", active);
-        b.setAttribute("aria-pressed", String(active));
-      });
-    }
-  }
-  renderCounts();
-  renderActivity();
-  renderSignoff();
-  toast("Status saved: " + STATUS_LABEL[status] + ".");
-}
-
-function handleComment(form) {
-  const name = requireReviewer();
-  if (!name) return;
-  const type = form.dataset.targetType;
-  const id = form.dataset.targetId;
-  const text = form.elements.text.value.trim();
-  const commentType = form.elements.commentType.value;
-  if (!text) { toast("Write a note before posting."); return; }
-  state.comments.push({ id: uid("cm"), targetType: type, targetId: id, author: name, role: reviewerRole(), commentType: commentType, text: text, at: nowISO(), resolved: false });
-  persist();
-  const list = document.getElementById("comments-" + id);
-  if (list) list.innerHTML = commentsHTML(type, id);
-  const tab = document.querySelector('[data-action="tab"][data-variant-id="' + id + '"]');
-  const card = document.getElementById(id);
-  if (card) {
-    const summary = card.querySelector(".comments-drawer > summary");
-    if (summary) summary.textContent = "Comments (" + commentsFor("creative", id).length + ")";
-    const tabButton = card.querySelector('[data-tab="comments"] .tab-count');
-    if (tabButton) tabButton.textContent = commentsFor("variant", id).length;
-  }
-  form.reset();
-  renderActivity();
-  renderCounts();
-  toast("Comment saved.");
-}
-
-function handleEdit(form) {
-  const name = requireReviewer();
-  if (!name) return;
-  const variantId = form.dataset.variantId;
-  const variant = VARIANT_BY_ID[variantId];
-  if (!variant) return;
-  const headlines = [];
-  form.querySelectorAll('[data-kind="headline"]').forEach(function (el) {
-    const text = el.value.trim();
-    if (text) headlines.push({ label: variant.headlines[Number(el.dataset.index)] ? variant.headlines[Number(el.dataset.index)].label : "Headline", text: text });
-  });
-  const bodies = [];
-  form.querySelectorAll('[data-kind="body"]').forEach(function (el) {
-    const text = el.value.trim();
-    if (text) bodies.push({ label: variant.bodies[Number(el.dataset.index)] ? variant.bodies[Number(el.dataset.index)].label : "Primary text", text: text });
-  });
-  const description = form.elements.description.value.trim();
-  const cta = form.elements.cta.value.trim();
-  if (!headlines.length && !bodies.length && !description && !cta) { toast("Add some copy before saving."); return; }
-  state.edits.push({
-    id: uid("ed"), variantId: variantId, author: name, role: reviewerRole(), at: nowISO(),
-    fields: { headlines: headlines, bodies: bodies, description: description, cta: cta },
-    note: "Copy edited"
-  });
-  persist();
-  activeTabs[variantId] = "copy";
-  renderRoutes();
-  renderActivity();
-  renderCounts();
-  toast("Copy saved. The supplied copy is still in the revision history.");
-}
-
-function handleRewrite(form) {
-  const name = requireReviewer();
-  if (!name) return;
-  const variantId = form.dataset.variantId;
-  const title = form.elements.title.value.trim();
-  const headline = form.elements.headline.value.trim();
-  const text = form.elements.text.value.trim();
-  const description = form.elements.description ? form.elements.description.value.trim() : "";
-  const cta = form.elements.cta ? form.elements.cta.value.trim() : "";
-  const notes = form.elements.notes.value.trim();
-  if (!text) { toast("Write the rewrite before saving."); return; }
-  state.rewrites.push({ id: uid("rw"), variantId: variantId, author: name, role: reviewerRole(), title: title || "Untitled rewrite", headline: headline, text: text, description: description, cta: cta, notes: notes, at: nowISO() });
-  persist();
-  const list = document.getElementById("rewrites-" + variantId);
-  if (list) list.innerHTML = rewriteListHTML(variantId);
-  const card = document.getElementById(variantId);
-  if (card) {
-    const tabCount = card.querySelector('[data-tab="rewrite"] .tab-count');
-    if (tabCount) tabCount.textContent = rewritesFor(variantId).length;
-  }
-  form.reset();
-  renderActivity();
-  renderCounts();
-  toast("Rewrite saved.");
-}
-
-function applyRewrite(id) {
-  const r = state.rewrites.find(function (x) { return x.id === id; });
-  if (!r) return;
-  const v = VARIANT_BY_ID[r.variantId];
-  if (!v) return;
-  const current = currentCopy(v);
-  const fields = {
-    headlines: r.headline ? [{ label: "Headline", text: r.headline }] : current.headlines,
-    bodies: [{ label: "Primary text", text: r.text }],
-    description: r.description || current.description,
-    cta: r.cta || current.cta
-  };
-  state.edits.push({ id: uid("ed"), variantId: v.id, author: r.author, role: r.role, at: nowISO(), fields: fields, note: "Applied rewrite: " + r.title });
-  persist();
-  activeTabs[v.id] = "copy";
-  renderRoutes();
-  renderActivity();
-  renderCounts();
-  toast("Rewrite applied to the copy.");
-}
-
-function restoreEdit(id) {
-  const e = state.edits.find(function (x) { return x.id === id; });
-  if (!e) return;
-  const name = requireReviewer();
-  if (!name) return;
-  state.edits.push({ id: uid("ed"), variantId: e.variantId, author: name, role: reviewerRole(), at: nowISO(), fields: e.fields, note: "Restored an earlier revision" });
-  persist();
-  activeTabs[e.variantId] = "copy";
-  renderRoutes();
-  renderActivity();
-  renderCounts();
-  toast("Earlier revision restored.");
-}
-
-function restoreOriginal(variantId) {
-  const v = VARIANT_BY_ID[variantId];
-  if (!v) return;
-  const name = requireReviewer();
-  if (!name) return;
-  state.edits.push({ id: uid("ed"), variantId: variantId, author: name, role: reviewerRole(), at: nowISO(), fields: defaultCopy(v), note: "Restored supplied copy" });
-  persist();
-  activeTabs[variantId] = "copy";
-  renderRoutes();
-  renderActivity();
-  renderCounts();
-  toast("Supplied copy restored.");
-}
-
-function saveSignoff(form) {
-  const name = form.elements.name.value.trim();
-  const role = form.elements.role.value.trim();
-  const decision = form.elements.decision.value;
-  const notes = form.elements.notes.value.trim();
-  if (!name) { toast("Add the name for the sign-off."); form.elements.name.focus(); return; }
-  if (!decision) { toast("Choose a decision."); form.elements.decision.focus(); return; }
-  state.signoff = { name: name, role: role, decision: decision, notes: notes, at: nowISO() };
-  state.profile.name = name;
-  state.profile.role = role;
-  state.events.push({ id: uid("ev"), kind: "signoff", at: state.signoff.at, author: name, decision: decision });
-  persist();
-  renderSignoff();
-  syncProfileInputs();
-  renderActivity();
-  renderCounts();
-  toast("Sign-off saved.");
-}
-
 function copyText(text, message) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(function () { toast(message || "Copied."); }).catch(function () { fallbackCopy(text, message); });
+    navigator.clipboard.writeText(text).then(function () { toast(message); }).catch(function () { fallbackCopy(text, message); });
   } else {
     fallbackCopy(text, message);
   }
@@ -2464,174 +968,26 @@ function copyText(text, message) {
 function fallbackCopy(text, message) {
   const ta = document.createElement("textarea");
   ta.value = text;
-  ta.setAttribute("readonly", "");
   ta.style.position = "fixed";
   ta.style.left = "-9999px";
   document.body.appendChild(ta);
   ta.select();
-  try { document.execCommand("copy"); toast(message || "Copied."); }
-  catch (e) { toast("Copy is unavailable in this browser. Select the text and copy it manually."); }
+  try { document.execCommand("copy"); toast(message); }
+  catch (e) { toast("Copy is unavailable. Use Download .txt."); }
   document.body.removeChild(ta);
 }
-
-function buildSummary() {
-  const lines = [];
-  lines.push("# Soul Kitchen relaunch — approval record");
-  lines.push("");
-  lines.push("Prepared for Bella Acland · 20 October 2026 · Draft 1");
-  lines.push("");
-  lines.push("## Overall status");
-  lines.push("");
-  lines.push("- Document status: " + (state.signoff ? (DECISION_LABEL[state.signoff.decision] || state.signoff.decision) : document.getElementById("doc-status").textContent));
-  const vApproved = VARIANTS.filter(function (v) { return statusOf("variant", v.id) === "approved"; }).length;
-  const cApproved = CREATIVES.filter(function (c) { return statusOf("creative", c.id) === "approved"; }).length;
-  lines.push("- Approved: " + vApproved + " of " + VARIANTS.length + " routes, " + cApproved + " of " + CREATIVES.length + " creatives");
-  lines.push("- Comments: " + state.comments.length + " · Rewrites: " + state.rewrites.length + " · Edits: " + state.edits.length);
-  lines.push("");
-  if (state.signoff) {
-    lines.push("## Sign-off");
-    lines.push("");
-    lines.push("- **" + DECISION_LABEL[state.signoff.decision] + "** — " + state.signoff.name + (state.signoff.role ? ", " + state.signoff.role : ""));
-    lines.push("- " + formatDate(state.signoff.at));
-    if (state.signoff.notes) lines.push("- Notes: " + state.signoff.notes);
-    lines.push("");
-  }
-  lines.push("## Copy routes");
-  lines.push("");
-  VARIANTS.forEach(function (v) {
-    lines.push("### " + v.num + " · " + v.name);
-    lines.push("");
-    lines.push("- Status: " + STATUS_LABEL[statusOf("variant", v.id)]);
-    lines.push("- Angle: " + v.angle);
-    lines.push("- Flags: " + flagsFor(v.id).length + " (" + flagsFor(v.id).filter(function (f) { return f.severity === "high"; }).length + " high)");
-    const cs = commentsFor("variant", v.id);
-    if (cs.length) {
-      lines.push("- Comments:");
-      cs.forEach(function (c) { lines.push("  - " + c.author + ": " + c.text); });
-    }
-    const rs = rewritesFor(v.id);
-    if (rs.length) {
-      lines.push("- Rewrites:");
-      rs.forEach(function (r) { lines.push("  - " + r.title + " (" + r.author + "): " + r.text.split("\n")[0] + "…"); });
-    }
-    lines.push("");
-  });
-  lines.push("## Creatives");
-  lines.push("");
-  CREATIVES.forEach(function (c) {
-    lines.push("### " + c.num + " · " + c.title + " (" + c.flavour + ")");
-    lines.push("");
-    lines.push("- Status: " + STATUS_LABEL[statusOf("creative", c.id)]);
-    lines.push("- Flags: " + flagsFor(c.id).length);
-    const cs = commentsFor("creative", c.id);
-    if (cs.length) {
-      lines.push("- Comments:");
-      cs.forEach(function (cm) { lines.push("  - " + cm.author + ": " + cm.text); });
-    }
-    lines.push("");
-  });
-  lines.push("## High-priority claim checks");
-  lines.push("");
-  FLAGS.filter(function (f) { return f.severity === "high"; }).forEach(function (f) {
-    lines.push("- **" + f.id.toUpperCase() + " · " + f.title + "** — " + f.action);
-  });
-  lines.push("");
-  lines.push("## Note");
-  lines.push("");
-  lines.push("This record was saved in the reviewer’s browser. It is a review document, not a live ad. Claims still need the brand’s regulatory sign-off.");
-  return lines.join("\n");
-}
-
-function downloadFile(name, content, type) {
-  const blob = new Blob([content], { type: type || "text/plain;charset=utf-8" });
+function downloadNote() {
+  const blob = new Blob([buildNote()], { type: "text/plain;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = name;
+  a.download = "soul-kitchen-approval-note.txt";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  toast("Approval note downloaded.");
 }
-function downloadJSON() {
-  const payload = {
-    document: "Soul Kitchen relaunch approval",
-    version: "Draft 1",
-    preparedFor: "Bella Acland",
-    exportedAt: nowISO(),
-    state: state,
-    currentCopy: Object.fromEntries(VARIANTS.map(function (v) { return [v.id, currentCopy(v)]; }))
-  };
-  downloadFile("soul-kitchen-approval-record.json", JSON.stringify(payload, null, 2), "application/json");
-  toast("Record downloaded.");
-}
-function downloadMarkdown() {
-  downloadFile("soul-kitchen-approval-summary.md", buildSummary(), "text/markdown;charset=utf-8");
-  toast("Summary downloaded.");
-}
-
-function resetAll() {
-  if (!pendingReset) {
-    pendingReset = true;
-    const btn = document.getElementById("reset-btn");
-    if (btn) { btn.textContent = "Click again to confirm"; btn.classList.add("btn-danger"); }
-    toast("This will remove every saved comment, edit, rewrite and sign-off in this browser.");
-    setTimeout(function () { pendingReset = false; const b = document.getElementById("reset-btn"); if (b) b.textContent = "Reset saved changes"; }, 5000);
-    return;
-  }
-  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
-  state.profile = { name: "", role: "" };
-  state.comments = [];
-  state.edits = [];
-  state.rewrites = [];
-  state.statuses = { variant: {}, creative: {} };
-  state.events = [];
-  state.signoff = null;
-  state.savedAt = null;
-  activeTabs = {};
-  pendingReset = false;
-  const btn = document.getElementById("reset-btn");
-  if (btn) btn.textContent = "Reset saved changes";
-  document.getElementById("reviewer-name").value = "";
-  document.getElementById("reviewer-role").value = "";
-  const sf = document.getElementById("signoff-form");
-  if (sf) sf.reset();
-  renderAll();
-  toast("Saved changes cleared.");
-}
-
-/* ============================================================
-   LIGHTBOX
-   ============================================================ */
-function openLightbox(id) {
-  const idx = CREATIVES.findIndex(function (c) { return c.id === id; });
-  if (idx < 0) return;
-  lightboxIndex = idx;
-  const lb = document.getElementById("lightbox");
-  const img = document.getElementById("lightbox-img");
-  const cap = document.getElementById("lightbox-caption");
-  const c = CREATIVES[idx];
-  img.src = c.file;
-  img.alt = c.alt;
-  cap.innerHTML = "<b>" + esc(c.num) + " · " + esc(c.title) + "</b> — " + esc(c.flavour);
-  lb.hidden = false;
-  document.body.style.overflow = "hidden";
-  document.querySelector(".lightbox-close").focus();
-}
-function closeLightbox() {
-  const lb = document.getElementById("lightbox");
-  if (!lb) return;
-  lb.hidden = true;
-  document.body.style.overflow = "";
-}
-function moveLightbox(delta) {
-  lightboxIndex = (lightboxIndex + delta + CREATIVES.length) % CREATIVES.length;
-  openLightbox(CREATIVES[lightboxIndex].id);
-}
-
-/* ============================================================
-   THEME
-   ============================================================ */
 function applyTheme(theme) {
   const root = document.documentElement;
   if (theme === "dark" || theme === "light") root.setAttribute("data-theme", theme);
@@ -2643,237 +999,76 @@ function applyTheme(theme) {
       ? '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path>'
       : '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>';
   }
-  try { localStorage.setItem(STORAGE_KEY + "-theme", theme || ""); } catch (e) {}
-}
-function initTheme() {
-  let saved = "";
-  try { saved = localStorage.getItem(STORAGE_KEY + "-theme") || ""; } catch (e) {}
-  applyTheme(saved);
+  try { localStorage.setItem(THEME_KEY, theme || ""); } catch (e) {}
 }
 
-/* ============================================================
-   SCROLLSPY
-   ============================================================ */
-function initScrollSpy() {
-  const links = Array.from(document.querySelectorAll(".nav-link"));
-  const sections = links.map(function (a) { return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
-  if (!("IntersectionObserver" in window) || !sections.length) return;
-  const obs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      links.forEach(function (a) { a.classList.toggle("is-active", a.getAttribute("href") === "#" + entry.target.id); });
-    });
-  }, { rootMargin: "-22% 0px -66% 0px", threshold: 0 });
-  sections.forEach(function (s) { obs.observe(s); });
-}
-
-/* ============================================================
-   EVENT DELEGATION
-   ============================================================ */
-document.addEventListener("click", function (e) {
-  const btn = e.target.closest("[data-action]");
-  if (!btn) return;
-  const action = btn.dataset.action;
-
-  if (action === "tab") {
-    const variantId = btn.dataset.variantId;
-    const tab = btn.dataset.tab;
-    activeTabs[variantId] = tab;
-    const card = document.getElementById(variantId);
-    if (!card) return;
-    card.querySelectorAll('[data-action="tab"]').forEach(function (b) {
-      const selected = b.dataset.tab === tab;
-      b.setAttribute("aria-selected", String(selected));
-    });
-    card.querySelectorAll(".tab-panel").forEach(function (p) {
-      p.hidden = p.id !== "panel-" + variantId + "-" + tab;
-    });
-    return;
+document.addEventListener("change", function (e) {
+  const el = e.target;
+  if (el.matches("[data-creative]")) {
+    state.creatives[el.dataset.creative] = el.checked;
+    save(); updateStatus();
   }
-  if (action === "status") { handleStatus(btn); return; }
-  if (action === "edit") {
-    const id = btn.dataset.variantId;
-    const view = document.getElementById("copy-view-" + id);
-    const edit = document.getElementById("copy-edit-" + id);
-    if (view && edit) { view.hidden = true; edit.hidden = false; attachAutoGrow(); edit.querySelector("textarea")?.focus(); }
-    return;
+  if (el.matches("[data-copy]")) {
+    state.copy[el.dataset.copy] = el.checked;
+    save(); updateStatus();
   }
-  if (action === "cancel-edit") {
-    const id = btn.dataset.variantId;
-    const view = document.getElementById("copy-view-" + id);
-    const edit = document.getElementById("copy-edit-" + id);
-    if (view && edit) { view.hidden = false; edit.hidden = true; }
-    return;
-  }
-  if (action === "restore-edit") { restoreEdit(btn.dataset.editId); return; }
-  if (action === "restore-original") { restoreOriginal(btn.dataset.variantId); return; }
-  if (action === "toggle-comment") {
-    const c = state.comments.find(function (x) { return x.id === btn.dataset.commentId; });
-    if (!c) return;
-    c.resolved = !c.resolved;
-    persist();
-    const list = document.getElementById("comments-" + c.targetId);
-    if (list) list.innerHTML = commentsHTML(c.targetType, c.targetId);
-    renderActivity();
-    toast(c.resolved ? "Comment resolved." : "Comment reopened.");
-    return;
-  }
-  if (action === "delete-comment") {
-    const c = state.comments.find(function (x) { return x.id === btn.dataset.commentId; });
-    if (!c) return;
-    if (!window.confirm("Remove this comment? This cannot be undone.")) return;
-    state.comments = state.comments.filter(function (x) { return x.id !== c.id; });
-    persist();
-    const list = document.getElementById("comments-" + c.targetId);
-    if (list) list.innerHTML = commentsHTML(c.targetType, c.targetId);
-    const card = document.getElementById(c.targetId);
-    if (card) {
-      const summary = card.querySelector(".comments-drawer > summary");
-      if (summary) summary.textContent = "Comments (" + commentsFor("creative", c.targetId).length + ")";
+  if (el.matches("[data-change-toggle]")) {
+    const id = el.dataset.changeToggle;
+    state.change[id] = el.checked;
+    const box = document.querySelector('[data-change-box="' + id + '"]');
+    if (box) box.hidden = !el.checked;
+    save(); updateStatus();
+    if (el.checked) {
+      const ta = document.querySelector('[data-change-text="' + id + '"]');
+      if (ta) ta.focus();
     }
-    renderActivity();
-    renderCounts();
-    toast("Comment removed.");
-    return;
   }
-  if (action === "apply-rewrite") { applyRewrite(btn.dataset.rewriteId); return; }
-  if (action === "copy-rewrite") {
-    const r = state.rewrites.find(function (x) { return x.id === btn.dataset.rewriteId; });
-    if (r) copyText(r.text, "Rewrite copied.");
-    return;
-  }
-  if (action === "delete-rewrite") {
-    const r = state.rewrites.find(function (x) { return x.id === btn.dataset.rewriteId; });
-    if (!r) return;
-    if (!window.confirm("Remove this rewrite? This cannot be undone.")) return;
-    state.rewrites = state.rewrites.filter(function (x) { return x.id !== r.id; });
-    persist();
-    const list = document.getElementById("rewrites-" + r.variantId);
-    if (list) list.innerHTML = rewriteListHTML(r.variantId);
-    const card = document.getElementById(r.variantId);
-    if (card) {
-      const tabCount = card.querySelector('[data-tab="rewrite"] .tab-count');
-      if (tabCount) tabCount.textContent = rewritesFor(r.variantId).length;
-    }
-    renderActivity();
-    renderCounts();
-    toast("Rewrite removed.");
-    return;
-  }
-  if (action === "load-suggested") {
-    const v = VARIANT_BY_ID[btn.dataset.variantId];
-    if (!v || !v.suggested) return;
-    const form = btn.closest("form");
-    if (!form) return;
-    form.elements.title.value = "Agency draft — " + v.name;
-    form.elements.headline.value = v.suggested.headline || "";
-    form.elements.text.value = v.suggested.body || "";
-    if (form.elements.description) form.elements.description.value = v.suggested.description || "";
-    if (form.elements.cta) form.elements.cta.value = v.suggested.cta || "";
-    form.elements.notes.value = v.suggested.note || "";
-    attachAutoGrow();
-    toast("Agency draft loaded. Edit it before saving.");
-    return;
-  }
-  if (action === "copy-copy") {
-    const v = VARIANT_BY_ID[btn.dataset.variantId];
-    if (!v) return;
-    const c = currentCopy(v);
-    const text = c.headlines.map(function (h) { return h.text; }).concat(c.bodies.map(function (b) { return b.text; })).concat([c.description, c.cta]).filter(Boolean).join("\n\n");
-    copyText(text, "Route copy copied.");
-    return;
-  }
-  if (action === "lightbox") { openLightbox(btn.dataset.creativeId); return; }
-  if (action === "lightbox-close") { closeLightbox(); return; }
-  if (action === "lightbox-prev") { moveLightbox(-1); return; }
-  if (action === "lightbox-next") { moveLightbox(1); return; }
-  if (action === "copy-summary") { copyText(buildSummary(), "Approval summary copied."); return; }
-  if (action === "download-md") { downloadMarkdown(); return; }
-  if (action === "download-json") { downloadJSON(); return; }
-  if (action === "reset") { resetAll(); return; }
-  if (action === "clear-signoff") {
-    if (!window.confirm("Clear the saved sign-off?")) return;
-    state.signoff = null;
-    persist();
-    renderSignoff();
-    renderActivity();
-    renderCounts();
-    toast("Sign-off cleared.");
-    return;
-  }
-});
-
-document.addEventListener("submit", function (e) {
-  const form = e.target;
-  if (!form.matches("form[data-form]")) return;
-  e.preventDefault();
-  const kind = form.dataset.form;
-  if (kind === "comment") handleComment(form);
-  if (kind === "edit") handleEdit(form);
-  if (kind === "rewrite") handleRewrite(form);
 });
 
 document.addEventListener("input", function (e) {
-  if (e.target.id === "reviewer-name") {
-    state.profile.name = e.target.value.trim();
-    persist(true);
-    document.querySelectorAll("[data-author]").forEach(function (el) { el.textContent = e.target.value.trim() || "add your name first"; });
+  const el = e.target;
+  if (el.id === "reviewer-name") {
+    state.name = el.value;
+    save();
   }
-  if (e.target.id === "reviewer-role") {
-    state.profile.role = e.target.value.trim();
-    persist(true);
+  if (el.id === "overall") {
+    state.overall = el.value;
+    save();
+  }
+  if (el.matches("[data-change-text]")) {
+    state.changeText[el.dataset.changeText] = el.value;
+    save(); updateStatus();
   }
 });
 
-document.getElementById("signoff-form")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  saveSignoff(e.target);
+document.getElementById("copy-note").addEventListener("click", function () {
+  copyText(buildNote(), "Approval note copied — paste it into WhatsApp.");
 });
-
-document.getElementById("theme-toggle")?.addEventListener("click", function () {
+document.getElementById("download-note").addEventListener("click", downloadNote);
+document.getElementById("reset").addEventListener("click", function () {
+  if (!window.confirm("Reset all ticks and changes?")) return;
+  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+  state.name = ""; state.overall = ""; state.creatives = {}; state.copy = {}; state.change = {}; state.changeText = {};
+  document.getElementById("reviewer-name").value = "";
+  document.getElementById("overall").value = "";
+  document.querySelectorAll("[data-creative],[data-copy],[data-change-toggle]").forEach(function (el) { el.checked = false; });
+  document.querySelectorAll("[data-change-box]").forEach(function (el) { el.hidden = true; });
+  document.querySelectorAll("[data-change-text]").forEach(function (el) { el.value = ""; });
+  updateStatus();
+  toast("Reset.");
+});
+document.getElementById("theme-toggle").addEventListener("click", function () {
   const current = document.documentElement.getAttribute("data-theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const next = current === "dark" ? "light" : current === "light" ? "dark" : (prefersDark ? "light" : "dark");
   applyTheme(next);
 });
 
-document.getElementById("flag-filters")?.addEventListener("click", function (e) {
-  const btn = e.target.closest("[data-filter]");
-  if (!btn) return;
-  flagFilter = btn.dataset.filter;
-  renderFlags();
-});
-
-document.getElementById("lightbox")?.addEventListener("click", function (e) {
-  if (e.target === e.currentTarget) closeLightbox();
-});
-
-document.addEventListener("keydown", function (e) {
-  const lb = document.getElementById("lightbox");
-  if (!lb || lb.hidden) return;
-  if (e.key === "Escape") closeLightbox();
-  if (e.key === "ArrowLeft") moveLightbox(-1);
-  if (e.key === "ArrowRight") moveLightbox(1);
-});
-
-document.getElementById("export-menu")?.addEventListener("click", function (e) {
-  if (e.target.closest("button")) {
-    setTimeout(function () { document.getElementById("export-menu").removeAttribute("open"); }, 180);
-  }
-});
-
-/* ============================================================
-   BOOT
-   ============================================================ */
-loadState();
-probeStorage();
-updateSaveIndicator();
-initTheme();
-document.getElementById("reviewer-name").value = state.profile.name || "";
-document.getElementById("reviewer-role").value = state.profile.role || "";
-renderAll();
-initScrollSpy();
-if (!storageOK) toast("Saving is unavailable in this browser. Use Export to keep a copy.");
+load();
+let savedTheme = "";
+try { savedTheme = localStorage.getItem(THEME_KEY) || ""; } catch (e) {}
+applyTheme(savedTheme);
+restore();
 </script>
 </body>
 </html>
