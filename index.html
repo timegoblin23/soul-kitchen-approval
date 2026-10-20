@@ -1156,6 +1156,8 @@ Just add hot water and in 60 seconds you have a rich, comforting bowl.
 ✓ No palm oil, gums or added sugar
 
 Try the 5-Flavour Discovery Box with 15% off using code SOUP15. Free UK delivery.`,
+      description: "Up to 72% real vegetables, herbs & spices. No palm oil, gums or artificial flavours.",
+      cta: "Shop Now",
       note: "Uses the brand book’s approved “as little as 3%” comparison rather than the unsourced 4%. Removes “every single bowl” and the competitor attack. Award and Dragons’ Den lines are left out until flavour-specific substantiation is confirmed."
     }
   },
@@ -1217,6 +1219,8 @@ We gently dehydrate real vegetables, herbs and functional ingredients to keep th
 Real food that’s comforting, flavourful and ready in 60 seconds with just hot water.
 
 Try our Discovery Box today with code SOUP15.`,
+      description: "Plant-powered, gluten-free and made without gums. Ready in 60 seconds.",
+      cta: "Shop Now",
       note: "Removes every digestive-health claim, including “wreak havoc”, “gut microbiome”, “bloat”, “post-lunch slump” and “easy on digestion”. Replaces them with taste, convenience and verified formulation facts."
     }
   },
@@ -1287,6 +1291,8 @@ Vitamin B12 contributes to normal energy-yielding metabolism and to normal psych
 Just add hot water and enjoy.
 
 Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.`,
+      description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
+      cta: "Shop Now",
       note: "Removes all cognitive-function claims and the Mushroom Nourish Award line. Keeps the 2,000mg figure Bella confirmed and the authorised B12/D wording. The B12/D source is described as organic shiitake extract, per Bella’s note, rather than BIOVIT."
     }
   },
@@ -1343,6 +1349,8 @@ Vitamin B12 contributes to normal energy-yielding metabolism and to normal psych
 
 Just add hot water and enjoy.
 Try it in our Discovery Box with code SOUP15 for 15% off and free UK delivery.`,
+      description: "Lion’s Mane, 100% NRV of vitamin B12 and vitamin D. Vegan, gluten-free, under 100 calories.",
+      cta: "Shop Now",
       note: "Keeps route 04’s authorised claims and removes the implied link between Lion’s Mane and B12. “Plus” replaces “and” in the headline so B12 is not attributed to the mushroom."
     }
   },
@@ -1396,6 +1404,8 @@ We champion real, gently dehydrated vegetables, superfoods and functional ingred
 Real food that’s comforting, flavourful and ready in minutes with just hot water.
 
 Try our Discovery Box today with code SOUP15.`,
+      description: "Real vegetables, herbs and spices. No palm oil, gums or artificial flavours. Ready in 60 seconds.",
+      cta: "Shop Now",
       note: "Completes the route with the missing headline, description and CTA. Removes the internal note from the production copy and changes “whole vegetables” to “vegetables” to stay clear of the 100% whole-vegetable territory."
     }
   }
@@ -1975,6 +1985,8 @@ function rewriteListHTML(variantId) {
       '<button class="btn btn-small" type="button" data-action="copy-rewrite" data-rewrite-id="' + esc(r.id) + '">Copy</button>' +
       '<button class="btn btn-small btn-danger" type="button" data-action="delete-rewrite" data-rewrite-id="' + esc(r.id) + '">Remove</button></div></div>' +
       (r.headline ? '<div class="rewrite-meta"><b>Headline:</b> ' + esc(r.headline) + "</div>" : "") +
+      (r.description ? '<div class="rewrite-meta"><b>Description:</b> ' + esc(r.description) + "</div>" : "") +
+      (r.cta ? '<div class="rewrite-meta"><b>CTA:</b> ' + esc(r.cta) + "</div>" : "") +
       '<details><summary>Read rewrite</summary><div class="copy-text">' + formatCopy(r.text) + "</div></details>" +
       (r.notes ? '<div class="rewrite-meta" style="margin-top:8px"><b>Notes:</b> ' + esc(r.notes) + "</div>" : "") +
       "</div>";
@@ -2069,7 +2081,9 @@ function routeHTML(variant) {
     '<div class="field"><label for="rt-' + variant.id + '">Rewrite title</label><input class="input" id="rt-' + variant.id + '" name="title" placeholder="e.g. Softer everyday lunch"></div>' +
     '<div class="field"><label for="rh-' + variant.id + '">Headline <span class="hint">(optional)</span></label><input class="input" id="rh-' + variant.id + '" name="headline" placeholder="Leave blank to keep the current headline"></div>' +
     '<div class="field span-2"><label for="rw-' + variant.id + '">Rewrite</label><textarea class="textarea" id="rw-' + variant.id + '" name="text" required placeholder="Write the new primary text here…"></textarea></div>' +
-    '<div class="field span-2"><label for="rn-' + variant.id + '">Notes for the team <span class="hint">(optional)</span></label><textarea class="textarea" id="rn-' + variant.id + '" name="notes" rows="2" placeholder="Why this route, what it fixes…"></textarea></div>' +
+    '<div class="field span-2"><label for="rd-' + variant.id + '">Description <span class="hint">(optional)</span></label><textarea class="textarea" id="rd-' + variant.id + '" name="description" rows="2" placeholder="Leave blank to keep the current description"></textarea></div>' +
+    '<div class="field"><label for="rc-' + variant.id + '">Call to action <span class="hint">(optional)</span></label><input class="input" id="rc-' + variant.id + '" name="cta" placeholder="Leave blank to keep the current CTA"></div>' +
+    '<div class="field"><label for="rn-' + variant.id + '">Notes for the team <span class="hint">(optional)</span></label><textarea class="textarea" id="rn-' + variant.id + '" name="notes" rows="2" placeholder="Why this route, what it fixes…"></textarea></div>' +
     '</div><div class="form-actions"><button class="btn btn-small" type="button" data-action="load-suggested" data-variant-id="' + variant.id + '">Load agency draft</button>' +
     '<button class="btn btn-primary btn-small" type="submit">Save rewrite</button></div>' +
     '<p class="suggested-note">The agency draft is a discussion starter, not approved copy. It is built from the brand book and Bella’s notes, and still needs your sign-off.</p></form>' +
@@ -2353,9 +2367,11 @@ function handleRewrite(form) {
   const title = form.elements.title.value.trim();
   const headline = form.elements.headline.value.trim();
   const text = form.elements.text.value.trim();
+  const description = form.elements.description ? form.elements.description.value.trim() : "";
+  const cta = form.elements.cta ? form.elements.cta.value.trim() : "";
   const notes = form.elements.notes.value.trim();
   if (!text) { toast("Write the rewrite before saving."); return; }
-  state.rewrites.push({ id: uid("rw"), variantId: variantId, author: name, role: reviewerRole(), title: title || "Untitled rewrite", headline: headline, text: text, notes: notes, at: nowISO() });
+  state.rewrites.push({ id: uid("rw"), variantId: variantId, author: name, role: reviewerRole(), title: title || "Untitled rewrite", headline: headline, text: text, description: description, cta: cta, notes: notes, at: nowISO() });
   persist();
   const list = document.getElementById("rewrites-" + variantId);
   if (list) list.innerHTML = rewriteListHTML(variantId);
@@ -2379,8 +2395,8 @@ function applyRewrite(id) {
   const fields = {
     headlines: r.headline ? [{ label: "Headline", text: r.headline }] : current.headlines,
     bodies: [{ label: "Primary text", text: r.text }],
-    description: current.description,
-    cta: current.cta
+    description: r.description || current.description,
+    cta: r.cta || current.cta
   };
   state.edits.push({ id: uid("ed"), variantId: v.id, author: r.author, role: r.role, at: nowISO(), fields: fields, note: "Applied rewrite: " + r.title });
   persist();
@@ -2751,6 +2767,8 @@ document.addEventListener("click", function (e) {
     form.elements.title.value = "Agency draft — " + v.name;
     form.elements.headline.value = v.suggested.headline || "";
     form.elements.text.value = v.suggested.body || "";
+    if (form.elements.description) form.elements.description.value = v.suggested.description || "";
+    if (form.elements.cta) form.elements.cta.value = v.suggested.cta || "";
     form.elements.notes.value = v.suggested.note || "";
     attachAutoGrow();
     toast("Agency draft loaded. Edit it before saving.");
