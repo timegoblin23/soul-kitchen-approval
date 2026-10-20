@@ -2559,7 +2559,8 @@ function downloadJSON() {
     version: "Draft 1",
     preparedFor: "Bella Acland",
     exportedAt: nowISO(),
-    state: state
+    state: state,
+    currentCopy: Object.fromEntries(VARIANTS.map(function (v) { return [v.id, currentCopy(v)]; }))
   };
   downloadFile("soul-kitchen-approval-record.json", JSON.stringify(payload, null, 2), "application/json");
   toast("Record downloaded.");
